@@ -1,0 +1,10 @@
+#footer{
+    position: relative;
+}
+#footer .foot{
+    display: flex;
+    position: absolute;
+    line-height: 50px;
+    border-top:1px solid #eee;
+    justify-content:space-around;
+}

@@ -16,5 +16,13 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+      (function change(){
+        var oFz = document.getElementsByTagName("html")[0];
+        var width = window.innerWidth;
+        oFz.style.fontSize = width/10 +"px";
+        window.onresize = function(){change();}
+      })();
+    </script>
   </body>
 </html>

@@ -1,0 +1,22 @@
+#main{
+    padding-top:1.188888888888rem;
+    background-color: #fff;
+}
+.banner{
+    width: 10rem;
+    height: 3.626666666666rem;
+    text-align: center;
+}
+.banner .swiper-slide img{
+    width: 10rem;
+    height: 3.5466666667rem;
+}
+
+.banner .page span{
+    width: .373333333333rem;
+    height: .053333333333rem;
+    border-radius: 0;
+}
+.banner .page .swiper-pagination-bullet-active{
+    background-color: #fff;
+}

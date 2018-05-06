@@ -1,15 +1,86 @@
 <template>
   <div name="HomeBanner">
-    weeeeeeeeeeeeeeeeeeeeeeeeeeee
+  		<div id="main">
+			<div class="banner">
+				<div class="swiper-container" id="swiper-one">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>
+				        <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>
+				        <div class="swiper-slide">
+		        	       	<a href=""> 
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>				        
+				        <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>				       
+				        <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>				        
+				        <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>		        
+				        <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>	        
+				        <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>	        
+				        <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>	       
+				         <div class="swiper-slide">
+		        	       	<a href="">
+				        		<img src="../assets/images/timg.png" width="355" height="133">
+				        	</a>
+				        </div>
+				    </div>
+				    <div class="swiper-pagination page"></div>
+				</div>
+			</div>
+		</div>
   </div>
 </template>
 
 <script>
+	import Swiper from '../../swiper-4.2.2.min.js'
     export default {
-        name: "HomeBanner"
+        name: "HomeBanner",
+        mounted(){
+	     var mySwiper = new Swiper ('#swiper-one', {
+	         autoplay: {
+	          autoplay: true,
+	        },
+	        loop:true,
+	        pagination: {
+	          el: '.swiper-pagination',
+	        },
+		  })        
+	  }
     }
 </script>
 
-<style scoped>
-
+<style>
+  @import '../assets/css/swiper.min.css';
+  @import '../assets/css/banner.css';
 </style>

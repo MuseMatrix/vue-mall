@@ -1,0 +1,18 @@
+@charset "utf-8";
+body, p, ul, dl, dd, ol, h1, h2, h3, h4, h5, h6{ margin:0;}
+ul,ol{ padding-left:0;list-style:none;}
+body{font-size: 12px; font-family:"PingFang SC";}
+a{text-decoration: none; color: #999;}
+img{vertical-align: top;}
+.bgc-f03{background-color: #FF0036;}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+.w9-m{width: 9.4rem; margin: 0 auto;}
+.w10-m{width: 10rem; margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.w10{width: 10rem;}
+.w9-2{width: 9.2rem;}

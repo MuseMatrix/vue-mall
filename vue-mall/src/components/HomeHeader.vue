@@ -1,24 +1,21 @@
 <template>
-  <div class="home_h">
-    <header class="m_header">
-      <div class="m_header_box" id="my_search">
-        <a href="#" class="icon_logo"></a>
-        <form action="#">
-          <span class="icon_search"></span>
-          <input type="search" class="search" placeholder="点击搜索" @click="goSearch($event)">
-        </form>
-        <router-link to="/login" class="logo_btn">登录</router-link>
+  <div id="home-h">
+      <div class="head-top">
+        <a class="category fl" href="">分类</a>
+        <a class="msg fr" href="">图标</a>
+        <div class="input">
+          <a class="search" href="">请输入商品名称</a>
+        </div>
       </div>
-    </header>
-  </div>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "home_h"
+        name: "home-h"
     }
 </script>
 
-<style scoped>
-
+<style>
+  @import '../assets/css/header.css';
 </style>

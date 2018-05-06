@@ -1,12 +1,14 @@
 <template>
   <div class="home">
-    <div class="m_layout">
+    <div class="wrap w10">
       <!-- 头部区 -->
       <HomeHeaderView></HomeHeaderView>
-      <!-- 轮播图-->
+      <!-- 轮播图 -->
       <HomeBannerView></HomeBannerView>
-      <!--商品区-->
+      <!-- 内容区 -->
       <HomeMainView></HomeMainView>
+      <!-- 底部区域 -->
+      <HomeBottomView></HomeBottomView>
     </div>
   </div>
 </template>
@@ -14,15 +16,17 @@
   import HomeHeaderView from './HomeHeader.vue';
   import HomeBannerView from './HomeBanner.vue';
   import HomeMainView from './HomeMain.vue';
+  import HomeBottomView from './HomeBottom.vue';
   export default{
     name:"home",
     components:{
       HomeHeaderView,
       HomeBannerView,
-      HomeMainView
+      HomeMainView,
+      HomeBottomView
     },
   }
 </script>
 <style>
-  @import '../assets/css/index.css';
+  @import '../assets/css/common.css';
 </style>
