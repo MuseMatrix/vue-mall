@@ -14,36 +14,36 @@
 						        	<a href="">
 						        		<h3>女士高端包</h3>
 										<p>进口小牛皮</p>
-						        		<img src="../assets/images/1.jpg" width="105" height="105" alt="">
+						        		<img src="../../assets/images/1.jpg" width="105" height="105" alt="">
 						        	</a>
 						        </div>
 						        <div class="swiper-slide">
 				        	       	<a href="">
 				        	       		<h3>海尔冰箱</h3>
 										<p>高端品质</p>
-						        		<img src="../assets/images/2.jpg" width="105" height="105">
+						        		<img src="../../assets/images/2.jpg" width="105" height="105">
 						        	</a>
 						        </div>
 						        <div class="swiper-slide">
-				        	       	<a href=""> 
+				        	       	<a href="">
 				        	       		<h3>进口草莓</h3>
 										<p>配送极速达</p>
-						        		<img src="../assets/images/3.jpg" width="105" height="105">
+						        		<img src="../../assets/images/3.jpg" width="105" height="105">
 						        	</a>
-						        </div>			        
+						        </div>
 						        <div class="swiper-slide">
-				        	       	<a href=""> 
+				        	       	<a href="">
 				        	       		<h3>荣耀体脂秤</h3>
 										<p>我的健康我做主  </p>
-						        		<img src="../assets/images/3.jpg" width="105" height="105">
+						        		<img src="../../assets/images/3.jpg" width="105" height="105">
 						        	</a>
-						        </div>				        								  
+						        </div>
 						    </div>
 						</div>
 					</div>
 				</div>
 				<a href="" class="love w10-m">
-					<img src="../assets/images/love.gif" alt="">
+					<img src="../../assets/images/love.gif" alt="">
 				</a>
 				<div class="w9-m snack-goods">
 					<h2 class="goods-title">
@@ -52,39 +52,39 @@
 					</h2>
 					<ul class="clearfix">
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
 						</li>
 					</ul>
 				</div>
 				<a href="" class="love w10-m">
-					<img src="../assets/images/love.gif" alt="">
+					<img src="../../assets/images/love.gif" alt="">
 				</a>
 				<div class="w9-m snack-goods">
 					<h2 class="goods-title">
@@ -93,32 +93,32 @@
 					</h2>
 					<ul class="clearfix">
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
 						</li>
@@ -130,30 +130,29 @@
 					</h2>
 					<ul class="clearfix">
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 						<li>
-							<img src="../assets/images/3.jpg" width="105" height="105">
+							<img src="../../assets/images/3.jpg" width="105" height="105">
 							<p>我的健康我做主  </p>
 							<p>￥30<span>官方</span></p>
-						</li>								
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-    </div>
 </template>
 
 <script>
-	import Swiper from '../../swiper-4.2.2.min.js'
+	import Swiper from '../../../plugin-js/swiper-4.2.2.min.js'
     export default {
         name: "HomeMain",
          mounted(){
@@ -168,11 +167,11 @@
 	          nextEl: '.swiper-button-prev',
 	          prevEl: '.swiper-button-prev',
 	          },
-	      })   
+	      })
 	  }
     }
 </script>
 
 <style>
-	@import '../assets/css/content.css';
+	@import '../../assets/css/home/content.css';
 </style>

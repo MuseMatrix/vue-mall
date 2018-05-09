@@ -1,0 +1,30 @@
+.detail-footer{
+  position: fixed;
+  bottom: 0;
+  margin-top: .266666666rem;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.detail-footer .foot a{
+  display: inline-block;
+  width: 1.5rem;
+  padding: .2rem 0;
+  border-right: 1px solid #ccc;
+  vertical-align: middle;
+}
+.detail-footer .foot a:nth-child(3){
+  border: none;
+}
+.detail-footer .btn{
+  display: inline-block;
+  vertical-align: middle;
+}
+.detail-footer .btn button{
+  padding: .2rem .3rem;
+  background-image: linear-gradient(to right, #51A8F0, #2068E1);
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: .5rem;
+}

@@ -1,0 +1,45 @@
+.details-desc .spec-panel{
+  width: 9.4676666666666rem;
+  background-color: #fff;
+  padding: .2666666666666rem;
+  margin: .2rem 0;
+}
+.details-desc .spec-panel span{
+  color: #8C8C8C;
+}
+.details-desc .panel-line{
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0;
+}
+.detail-acess .panel-list li{
+  background-color: #fff;
+  padding: .2666666666666rem;
+  border-bottom: .0266666rem solid #eee;
+}
+.panel-list li .pl img{
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    vertical-align:middle;
+}
+.panel-list li .pl:nth-child(1){
+  color: #7C7C7C;
+}
+.panel-list li span{
+  color: #C2C2C2;
+}
+.panel-list li p{
+  padding: .1333333333333333rem 0;
+  line-height: 1.5;
+  color:#B3B3B3;
+}
+.panel-list li .pl .higho{
+  padding: 0 .1rem;
+  border: 1px solid #007aff;
+  color: #007aff;
+  font-size: 10px;
+  border-radius: .266666666rem;
+
+}
+
+

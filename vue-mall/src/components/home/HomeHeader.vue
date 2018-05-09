@@ -17,5 +17,5 @@
 </script>
 
 <style>
-  @import '../assets/css/header.css';
+  @import '../../assets/css/home/header.css';
 </style>

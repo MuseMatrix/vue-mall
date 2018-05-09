@@ -16,5 +16,5 @@
     }
 </script>
 <style>
-  @import '../assets/css/bottom.css';
+  @import '../../assets/css/home/bottom.css';
 </style>

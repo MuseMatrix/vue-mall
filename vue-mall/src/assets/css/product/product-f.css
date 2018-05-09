@@ -1,0 +1,37 @@
+.foot-shop{
+  padding:.2666666666666rem;
+  margin-top: .2rem;
+  background-color: #fff;
+}
+.foot-shop img{
+  width: 1.3rem;
+  height: 1.3rem;
+  vertical-align: middle;
+}
+.foot-shop .text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.foot-shop .text h3{
+  color: #919191;
+}.foot-shop .text p{
+  color: #A3A3A3;
+}
+.panel-count{
+  padding: .266666666rem 0;
+}
+.panel-count .sale-c,.panel-count .count{
+  position: relative;
+  width: 4.7rem;
+  text-align: center;
+}
+.panel-count .sale-c{
+  border-right: 1px solid #eee;
+}
+.panel-count h3{
+  color: #7A7A7A;
+}
+.panel-count p{
+  color: #DEDEDE;
+}
+

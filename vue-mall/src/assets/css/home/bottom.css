@@ -4,7 +4,7 @@
 #footer .foot{
     display: flex;
     position: absolute;
-    line-height: 50px;
+    line-height: 1.3333333333rem;
     border-top:1px solid #eee;
     justify-content:space-around;
 }

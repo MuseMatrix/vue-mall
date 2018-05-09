@@ -1,0 +1,30 @@
+.detail-h{
+/*  position: fixed;
+  top: 0;*/
+  padding: 0 .266666666666rem;
+  line-height: 1.333333333333rem;
+  background-color: #fff;
+}
+.detail-h a{
+  color:#3a3a3a;
+}
+.detail-h .cate{
+  text-align: center;
+  font-size: .3988888888888rem;
+  font-weight: 500;
+}
+.detail-h .cate a{
+  display: inline-block;
+  padding: 0 .266666666666rem;
+}
+.detail-h .cate a:after{
+  display: none;
+  content:"";
+  border-bottom: .05rem solid #cc0e11;
+}
+.detail-h .cate a:hover{
+  color: #cc0e11;
+}
+.detail-h .cate a:hover:after{
+  display: block;
+}

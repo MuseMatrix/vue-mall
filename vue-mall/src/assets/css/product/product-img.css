@@ -1,0 +1,58 @@
+.detail-img img{
+  width: 10rem;
+  height: 7.8266666666666rem;
+  margin-top: 1px;
+}
+.detail-d{
+  padding: .3rem;
+  line-height: .5666666666667rem;
+  background-color: #fff;
+}
+.detail-d p:nth-child(1){
+  font-size: .3555555555rem;
+  color: rgba(48, 48, 48, 0.95);
+}
+.detail-d p:nth-child(2){
+  color: #cccccc;
+  font-size:.322222222rem;
+}
+.detail-d p:nth-child(3){
+  color: #cc0e11;
+}
+.detail-d p:nth-child(3) .price{
+  font-size: .4rem;
+  vertical-align: middle;
+}
+.detail-d p:nth-child(3) .act{
+  display: inline-block;
+  width: 1rem;
+  margin: 0 .3rem;
+  line-height: .4rem;
+  vertical-align: middle;
+  border: .02666666666rem solid #cc0e11;
+  border-radius: .08rem;
+}
+.detail-d p:nth-child(4){
+  margin-top: .23222222222rem;
+  padding-top: .2322222222rem;
+  line-height:.688888888888rem;
+  border-top: .0266666666666rem solid #eeeeee;
+}
+.detail-d p:nth-child(4) .favo{
+  background-color: #cc0e11;
+  color: #fff;
+  padding: 0 .2rem;
+  margin-right: .2rem;
+  vertical-align: middle;
+  line-height: .4rem;
+  border-radius: .133333333rem;
+}
+.detail-d p:nth-child(4) .cash{
+  vertical-align: middle;
+  font-size: .35555rem;
+}
+.detail-d p:nth-child(4) .prent{
+  color: #cc0e11;
+  font-size: .35555rem;
+  vertical-align: middle;
+}
