@@ -1,0 +1,7 @@
+.d-title{
+  display:flex;
+  padding-top:50px;
+  font-size:15px;
+  line-height:50px;
+  justify-content: space-around;
+}

@@ -1,8 +1,10 @@
 .detail-h{
-/*  position: fixed;
-  top: 0;*/
+  position: fixed;
+  top: 0;
+  width: 9.4556666666666rem;
   padding: 0 .266666666666rem;
-  line-height: 1.333333333333rem;
+  line-height: 1.31111111111111111rem;
+  border-bottom:1px solid #eee;
   background-color: #fff;
 }
 .detail-h a{

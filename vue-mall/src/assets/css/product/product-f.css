@@ -11,6 +11,7 @@
 .foot-shop .text{
   display: inline-block;
   vertical-align: middle;
+  padding-left: .2rem;
 }
 .foot-shop .text h3{
   color: #919191;
