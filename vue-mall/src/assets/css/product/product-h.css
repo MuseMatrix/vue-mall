@@ -3,7 +3,7 @@
   top: 0;
   width: 9.4556666666666rem;
   padding: 0 .266666666666rem;
-  line-height: 1.31111111111111111rem;
+  line-height: 1.18rem;
   border-bottom:1px solid #eee;
   background-color: #fff;
 }
@@ -22,7 +22,7 @@
 .detail-h .cate a:after{
   display: none;
   content:"";
-  border-bottom: .05rem solid #cc0e11;
+/*  border-bottom: .05rem solid #cc0e11;*/
 }
 .detail-h .cate a:hover{
   color: #cc0e11;

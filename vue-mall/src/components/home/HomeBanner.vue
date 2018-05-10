@@ -67,16 +67,16 @@
     export default {
         name: "HomeBanner",
         mounted(){
-	     var mySwiper = new Swiper ('#swiper-one', {
-	         autoplay: {
-	          autoplay: true,
-	        },
-	        loop:true,
-	        pagination: {
-	          el: '.swiper-pagination',
-	        },
-		  })
-	  }
+         var mySwiper = new Swiper ('#swiper-one', {
+             autoplay: {
+              autoplay: true,
+            },
+            loop:true,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+        })
+      }
     }
 </script>
 

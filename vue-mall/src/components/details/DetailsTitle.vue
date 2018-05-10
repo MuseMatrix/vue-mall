@@ -1,9 +1,9 @@
 <template>
   <div class="details-title">
       <ul class="d-title">
-          <li>商品介绍</li>
-          <li>规格参数</li>
-          <li>售后服务</li>
+          <li><router-link to="/details">商品介绍</router-link></li>
+          <li><router-link to="/spec">规格参数</router-link></li>
+          <li><router-link to="/afterservice">售后服务</router-link></li>
       </ul>
   </div>
 </template>

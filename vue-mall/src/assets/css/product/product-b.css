@@ -5,10 +5,10 @@
   background-color: #fff;
   border-top: 1px solid #eee;
 }
-.detail-footer .foot a{
+.detail-footer .foot .foot-t  {
   display: inline-block;
   width: 1.666666rem;
-  padding: .227rem 0;
+  padding: .209rem 0;
   border-right: 1px solid #ccc;
   vertical-align: middle;
   text-align: center;

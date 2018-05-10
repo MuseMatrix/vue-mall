@@ -1,0 +1,22 @@
+.spec{
+  padding-bottom: 1.3rem;
+}
+.spec-table table{
+  padding: .2rem;
+  border: 0.025rem solid #eee;
+  border-collapse: collapse;
+  color: #BFBFC1;
+}
+.spec-table table tr{
+	line-height: 0.875rem;
+}
+.spec-table table tr:nth-child(7) td:nth-child(2){
+	white-space: normal;
+  line-height: 1.5;
+}
+.spec-table table td{
+	padding: .1rem .2rem;
+	border: 0.025rem solid #eee;
+	white-space: nowrap;
+}
+

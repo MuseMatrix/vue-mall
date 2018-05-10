@@ -1,0 +1,26 @@
+.assess-t{
+  display: flex;
+  padding-top: 1.18rem;
+  margin: .4rem 0;
+  color: #989898;
+  justify-content: space-between;
+}
+.assess-t li:nth-child(1){
+  color: #D36469;
+  background-color: #FCF0F2;
+}
+.assess-t li{
+  line-height: 0.75rem;
+  background-color: #F7F7F7;
+  padding: 0 .3rem;
+  border-radius: 1.25rem;
+}
+.panel-list li{
+  line-height: 1rem;
+  border-bottom: 0.025rem solid #eee;
+}
+.panel-list li p.ans{
+  background-color: #F5F5F5;
+  padding: .3rem;
+  margin-bottom: .3rem;
+}

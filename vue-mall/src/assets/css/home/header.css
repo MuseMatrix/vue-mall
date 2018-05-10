@@ -1,8 +1,9 @@
 /* 头部 */
 #home-h{
-    position: absolute;
+    position: fixed;
     z-index: 999;
     width: 10rem;
+    background-color: #fff;
     }
 .head-top .category,.head-top .msg{
     margin-left: .22rem;

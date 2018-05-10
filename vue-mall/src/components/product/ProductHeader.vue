@@ -4,9 +4,9 @@
             <a class="back fl"><i class="iconfont icon-fanhui"></i></a>
             <a class="share fr"><i class="iconfont icon-fenxiang"></i></a>
             <div class="cate">
-              <a>商品</a>
-              <a>详情</a>
-              <a>评价</a>
+              <a><router-link to="/product">商品</router-link></a>
+              <a><router-link to="/details">详情</router-link></a>
+              <a><router-link to="/assess">评价</router-link></a>
             </div>
         </div>
     </div>

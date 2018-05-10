@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home pb-5">
     <div class="wrap w10">
       <!-- 头部区 -->
       <HomeHeaderView></HomeHeaderView>

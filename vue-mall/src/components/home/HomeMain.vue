@@ -52,9 +52,11 @@
 					</h2>
 					<ul class="clearfix">
 						<li>
-							<img src="../../assets/images/3.jpg" width="105" height="105">
-							<p>我的健康我做主  </p>
-							<p>￥30<span>官方</span></p>
+                <router-link to="/product">
+                  <img src="../../assets/images/3.jpg" width="105" height="105">
+                  <p>我的健康我做主  </p>
+                  <p>￥30<span>官方</span></p>
+                </router-link>
 						</li>
 						<li>
 							<img src="../../assets/images/3.jpg" width="105" height="105">

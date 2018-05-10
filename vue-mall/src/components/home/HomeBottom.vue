@@ -2,9 +2,20 @@
   <div id="home-b">
     <div id="footer" class="w10">
         <div class="w10 foot">
-            <a>商圈</a>
-            <a>商城</a>
-            <a>我的</a>
+            <a>
+              <i class="iconfont icon-wodeshangquan"></i>
+              <p>商圈</p>
+            </a>
+            <a>
+              <router-link to="/">
+                <i class="iconfont icon-shangcheng"></i>
+                <p>商城</p>
+              </router-link>
+            </a>
+            <a>
+              <i class="iconfont icon-wode"></i>
+              <p>我的</p>
+            </a>
         </div>
     </div>
   </div>
@@ -16,5 +27,7 @@
     }
 </script>
 <style>
+  @import '../../assets/css/common.css';
   @import '../../assets/css/home/bottom.css';
+  @import '../../assets/css/product/iconfont.css';
 </style>

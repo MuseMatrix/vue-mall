@@ -1,0 +1,17 @@
+.head{
+  position: fixed;
+  width: 10rem;
+  text-align: center;
+  line-height: 1.125rem;
+  font-size: .37333333333333rem;
+  z-index: 9999;
+  border-bottom: 0.025rem solid #eee;
+  background-color: #fff;
+}
+.category-header .category{
+  margin-left: .22rem;
+}
+.category-header .msg{
+  margin-right: .22rem;
+}
+

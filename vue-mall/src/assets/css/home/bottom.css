@@ -1,10 +1,10 @@
-#footer{
-    position: relative;
-}
 #footer .foot{
+    position: fixed;
+    bottom: 0;
     display: flex;
-    position: absolute;
-    line-height: 1.3333333333rem;
+    padding: .194rem;
     border-top:1px solid #eee;
+    text-align: center;
+    background-color: #fff;
     justify-content:space-around;
 }

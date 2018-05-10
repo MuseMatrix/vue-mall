@@ -1,0 +1,17 @@
+.img-l{
+  display: flex;
+  width: 7.5rem;
+  justify-content: space-around;
+}
+.img-l li{
+  line-height: 3;
+  padding-top: .6rem;
+  font-size: 0.35rem;
+  text-align: center;
+}
+.img-l:nth-child(1){
+  margin-top: 1.125rem;
+}
+.img-l li a{
+  display: inline-block;
+}

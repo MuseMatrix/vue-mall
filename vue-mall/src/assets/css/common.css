@@ -15,4 +15,5 @@ img{vertical-align: top;}
 .fl{float: left;}
 .fr{float: right;}
 .w10{width: 10rem;}
-.w9-2{width: 9.2rem;}
+.w9-2{width: 9.2rem;margin: 0 auto}
+.pb-5{padding-bottom: 1.25rem}

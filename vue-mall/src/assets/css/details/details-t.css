@@ -3,5 +3,6 @@
   padding-top:50px;
   font-size:15px;
   line-height:50px;
+  border-right: 1px solid #eee;
   justify-content: space-around;
 }

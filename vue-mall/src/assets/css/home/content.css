@@ -68,7 +68,7 @@
     width: 2.941111111111111111rem;
     margin: .07rem;
     border: .01666666666rem solid #eee;
-    flex: 0 1 auto;
+    flex:1 auto;
 }
 .snack-goods ul li img{
     width: 2.8rem;
