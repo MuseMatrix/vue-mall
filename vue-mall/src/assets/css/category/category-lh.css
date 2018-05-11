@@ -1,0 +1,31 @@
+.cate{
+  position: fixed;
+  z-index: 2;
+  padding: 0 .401111111rem;
+  text-align: center;
+  line-height: 1.14rem;
+  border-bottom: 0.025rem solid #eee;
+  background-color: #fff;
+}
+.cate a{
+  font-size: .3888888888rem;
+}
+.cate i,.cate span,.cate input{
+  vertical-align: middle;
+}
+.cate i{
+  font-size: .57333333333333rem;
+}
+.cate .text-msg{
+  display: inline-block;
+  padding: 0 .3rem;
+}
+.cate .text-msg input{
+  width: 6rem;
+  height: .7rem;
+  padding-left: .8rem;
+  outline: none;
+  border: none;
+  background:rgba(0,0,0,.08) url(../../images/search.png) .3rem .2rem/.4rem .4266666667rem no-repeat;
+  border-radius: 1.25rem;
+}

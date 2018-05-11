@@ -1,5 +1,5 @@
 <template>
-  <div class="after-service">
+  <div class="after-service pb-5">
     <div class="wrap w10">
       <!--详情头部区-->
       <AfterServiceHeaderView></AfterServiceHeaderView>

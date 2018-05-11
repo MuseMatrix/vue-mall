@@ -7,6 +7,9 @@ import Spec from '@/components/details/spec'
 import AfterService from '@/components/details/afterservice'
 import Category from '@/components/category/Category'
 import Assess from '@/components/assess/assess'
+import CategoryList from '@/components/category/categorylist'
+import Bill from '@/components/bill/bill'
+import Order from '@/components/order/order'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -37,6 +40,18 @@ export default new Router({
     {
       path:'/assess',
       component:Assess
+    },
+    {
+      path:'/categorylist',
+      component:CategoryList
+    },
+    {
+      path:'/bill',
+      component:Bill
+    },
+    {
+      path:'/order',
+      component:Order
     }
   ]
 })

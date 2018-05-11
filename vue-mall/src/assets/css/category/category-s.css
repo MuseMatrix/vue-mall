@@ -1,14 +1,13 @@
 .category-l{
-  position: fixed;
   width: 2.5rem;
   padding-top: 1.125rem;
   background-color: #fff;
 }
 .category-l li{
-  line-height: 1.29rem;
-  padding: 0 .5rem;
+  line-height: 1.5rem;
   font-size: 0.3625rem;
   color: #6F6F6F;
   border-bottom: 0.025rem solid #eee;
   border-right: 0.025rem solid #eee;
+  text-align: center;
 }

@@ -1,0 +1,77 @@
+.order{
+  background-color: #F5F5F5;
+}
+.head{
+  position: fixed;
+  width: 10rem;
+  text-align: center;
+  line-height: 1.125rem;
+  font-size: .37333333333333rem;
+  z-index: 9999;
+  border-bottom: 0.025rem solid #eee;
+  background-color: #fff;
+}
+.order .category{
+  margin-left: .22rem;
+}
+.content{
+  padding-top: 1.18rem;
+}
+.content .address{
+  display: inline-block;
+  padding: 0.375rem;
+  background-color: #fff;
+  border-bottom-image: l;
+}
+.content .address p.concat{
+  font-size: 0.45rem;
+}
+.content .address i{
+  padding-left: 1.125rem;
+  color: #ccc;
+}
+.content .address p.text{
+  font-size: 0.38rem;
+  color: #BABABA;
+}
+.order .botcss{
+  width: 10rem;
+  height: .05rem;
+}
+.order .shop{
+  background-color: #fff;
+}
+.order .shop .explain{
+  display: inline-block;
+  padding: 0 .2rem;
+}
+.order .shop .explain p{
+  width: 4.5rem;
+  font-size: 0.325rem;
+}
+.order .shop .explain p.price{
+  padding-top: .2rem;
+}
+.order .shop .shop-t{
+  line-height: 1.18rem;
+  padding-left: .22rem;
+}
+.order .shop .panel-img{
+  background-color: #F8F8F8;
+  padding: .35rem .22rem;
+}
+.panel-count .tally{
+  display: inline-block;
+}
+.panel-count .p-t{
+  line-height: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding: 0 .22rem;
+}
+.panel-count .fare{
+  line-height: 1.2rem;
+  padding: 0 .22rem;
+  border-bottom: 1px transparent;
+}
+
+

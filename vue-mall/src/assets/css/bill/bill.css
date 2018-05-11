@@ -1,0 +1,66 @@
+header{
+  border-bottom: 0.025rem solid #eee;
+  background-color: #fff;
+}
+body{
+  background-color: #F5F5F5;
+}
+.bill .head{
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 0.375rem;
+}
+.bill .must{
+  color: #cc0e11;
+}
+.bill .text{
+  font-size: 0.415rem;
+  line-height: 1.25rem;
+  background-color: #fff;
+}
+.bill .text label{
+  padding: 0 .5rem;
+}
+.bill .text input{
+  width: 5.5rem;
+  height: .7rem;
+  padding: 0 .5rem;
+  outline: none;
+  border:none;
+  font-size: 0.375rem;
+}
+.bill .radio{
+  margin-top: .3rem;
+  padding: 0 .5rem;
+  line-height: 1.19rem;
+  font-size: 0.375rem;
+  background-color: #fff;
+  border-bottom: 0.025rem solid #eee;
+}
+.bill .radio i{
+  vertical-align: middle;
+}
+.bill .radio label{
+  vertical-align: middle;
+}
+.bill .radio i.cked{
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  vertical-align: middle;
+  background: url(../../images/checkd.png) center/cover no-repeat;
+}
+.bill .radio i.uck{
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  vertical-align: middle;
+  background: url(../../images/unchek.png) center/cover no-repeat;
+}
+.bill .peop,.bill .comp{
+  display: inline-block;
+}
+.bill .comp{
+  padding-left: 0.25rem;
+}
+
