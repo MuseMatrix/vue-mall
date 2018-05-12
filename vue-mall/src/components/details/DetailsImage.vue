@@ -14,6 +14,6 @@
     }
 </script>
 
-<style>
+<style scoped>
   @import '../../assets/css/details/detail-I.css';
 </style>

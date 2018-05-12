@@ -80,7 +80,6 @@
     }
 </script>
 
-<style>
-  @import '../../assets/css/plugin/swiper.min.css';
+<style scoped>
   @import '../../assets/css/home/banner.css';
 </style>

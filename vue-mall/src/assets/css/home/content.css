@@ -1,15 +1,16 @@
 .content .hot-goods h2{
     padding: .22rem;
-    font-size: .366666666666rem;
+    font-size: .566666666666rem;
 }
 .content .hot-goods .hot-title{
     display: inline-block;
     color: #999;
     padding-left: .1rem;
     border-left: .053333333333rem solid #999;
+    font-size: .4rem;
 }
 .hot-goods .recom-mend{
-    margin-left: .255555555rem;
+    margin-left: .18rem;
 }
 
 .recom-mend .banner2 a{
@@ -56,6 +57,12 @@
     color: #ccc;
     font-weight:normal;
     font-size: 15px;
+}
+.snack-goods{
+    background: url(../../images/product.png) top/contain no-repeat;
+}
+.clbg{
+    background: none;
 }
 .snack-goods ul {
     display: flex;

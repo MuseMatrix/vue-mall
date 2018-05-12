@@ -1,4 +1,5 @@
-.spec{
+.spec-table{
+  padding-top: 2.5rem;
   padding-bottom: 1.5rem;
 }
 .spec-table table{
@@ -19,4 +20,5 @@
 	border: 0.025rem solid #eee;
 	white-space: nowrap;
 }
+
 

@@ -22,12 +22,12 @@
 </template>
 
 <script>
-  import Modal from './NowBuyModel.vue';
+/*  import Modal from './NowBuyModel.vue';*/
     export default {
         name: "product-bottom",
-        components:{
+      /*  components:{
           Modal
-        },
+        },*/
       data(){
           return{
             isModelVisible:false
@@ -42,7 +42,5 @@
 </script>
 
 <style scoped>
-  @import '../../assets/css/common.css';
-  @import '../../assets/css/product/iconfont.css';
   @import '../../assets/css/product/product-b.css';
 </style>

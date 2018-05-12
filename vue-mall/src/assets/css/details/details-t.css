@@ -1,8 +1,11 @@
 .d-title{
-  display:flex;
-  padding-top:1.25rem;
-  font-size:0.375rem;
-  line-height:1.25rem;
+  position: fixed;
+  width: 10rem;
+  display: flex;
+  background-color: #fff;
+  padding-top: 1.25rem;
+  font-size: 0.375rem;
+  line-height: 1.25rem;
   border-right: 0.025rem solid #eee;
   justify-content: space-around;
 }

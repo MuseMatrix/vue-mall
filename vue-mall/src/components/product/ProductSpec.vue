@@ -67,6 +67,6 @@
     }
 </script>
 
-<style>
+<style scoped>
     @import "../../assets/css/product/product-spec.css";
 </style>

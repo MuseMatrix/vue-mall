@@ -126,7 +126,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="w9-m snack-goods">
+				<div class="w9-m snack-goods clbg">
 					<h2 class="goods-title">
 						<span>—— 猜你喜欢 ——</span>
 					</h2>
@@ -174,6 +174,6 @@
     }
 </script>
 
-<style>
+<style scoped>
 	@import '../../assets/css/home/content.css';
 </style>

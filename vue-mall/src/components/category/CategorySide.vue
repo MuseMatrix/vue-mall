@@ -23,6 +23,6 @@
     }
 </script>
 
-<style>
+<style scoped>
   @import '../../assets/css/category/category-s.css';
 </style>

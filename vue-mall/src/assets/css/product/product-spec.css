@@ -19,8 +19,8 @@
 .panel-list li .pl img{
     width: .8rem;
     height: .8rem;
-    border-radius: 50%;
     vertical-align:middle;
+    border-radius: 50%;
 }
 .panel-list li .pl:nth-child(1){
   color: #7C7C7C;

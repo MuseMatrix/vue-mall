@@ -18,6 +18,6 @@
     }
 </script>
 
-<style>
+<style scoped>
   @import '../../assets/css/home/header.css';
 </style>

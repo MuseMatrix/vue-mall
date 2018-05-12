@@ -74,7 +74,7 @@
     }
 </script>
 
-<style>
+<style scoped>
   @import '../../assets/css/assess/assess-t.css';
   @import "../../assets/css/product/product-spec.css";
 </style>

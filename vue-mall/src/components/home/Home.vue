@@ -27,6 +27,5 @@
     },
   }
 </script>
-<style>
-  @import '../../assets/css/common.css';
+<style scoped>
 </style>

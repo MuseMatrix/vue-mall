@@ -111,7 +111,6 @@
     }
 </script>
 
-<style>
-  @import '../../assets/css/common.css';
+<style scoped>
   @import '../../assets/css/category/category-c.css';
 </style>

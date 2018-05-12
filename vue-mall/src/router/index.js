@@ -10,6 +10,7 @@ import Assess from '@/components/assess/assess'
 import CategoryList from '@/components/category/categorylist'
 import Bill from '@/components/bill/bill'
 import Order from '@/components/order/order'
+import NowBuyModel from '@/components/product/nowbuymodel'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -52,6 +53,10 @@ export default new Router({
     {
       path:'/order',
       component:Order
+    }, 
+    {
+      path:'/nowbuymodel',
+      component:NowBuyModel
     }
   ]
 })

@@ -64,7 +64,6 @@
     }
 </script>
 
-<style>
-  @import '../../assets/css/common.css';
+<style scoped>
   @import '../../assets/css/details/spec-t.css';
 </style>

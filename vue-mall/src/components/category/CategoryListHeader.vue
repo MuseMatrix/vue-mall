@@ -16,8 +16,6 @@
     }
 </script>
 
-<style>
-  @import '../../assets/css/common.css';
-  @import '../../assets/css/product/iconfont.css';
+<style scoped>
   @import '../../assets/css/category/category-lh.css';
 </style>
