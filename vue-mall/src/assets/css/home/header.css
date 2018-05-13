@@ -13,6 +13,9 @@
 .head-top .msg{
     margin-right: .22rem;
 }
+.head-top i{
+  font-size: .47333333333333rem;
+}
 #home-h .search{
     position: relative;
     display: block;

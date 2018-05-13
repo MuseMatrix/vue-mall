@@ -1,0 +1,32 @@
+header{
+  border-bottom: 0.025rem solid #eee;
+  background-color: #fff;
+}
+.pay-success .head{
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: .3988888888888rem;
+}
+.pay-success .head a{
+  color: #333333;
+}
+.pay-s{
+  width: 10rem;
+  height: 4.375rem;
+  text-align: center;
+  background: url(../../images/success.png) 4.35rem .4rem/1.075rem .9rem no-repeat,url(../../images/bg.png) center/cover no-repeat;
+}
+.success-text{
+  padding: 1.5rem;
+  color: #fff;
+}
+.success-text p:nth-child(1){
+  font-size: .4rem;
+}
+.success-text p:nth-child(2){
+  font-size: .325rem;
+}
+.goods-title{
+  padding: .8rem;
+  text-align: center;
+}

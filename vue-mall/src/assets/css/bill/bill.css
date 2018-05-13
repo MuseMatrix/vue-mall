@@ -42,6 +42,9 @@ header{
   background-color: #fff;
   border-bottom: 0.025rem solid #eee;
 }
+.bill .radio .clp{
+  padding: 0;
+}
 .bill .radio i{
   vertical-align: middle;
 }

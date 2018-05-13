@@ -1,0 +1,31 @@
+.sear{
+  position: fixed;
+  z-index: 2;
+  padding: 0 .401111111rem;
+  line-height: 1.14rem;
+  text-align: center;
+  border-bottom: 0.025rem solid #eee;
+  background-color: #fff;
+}
+.sear a{
+  font-size: .3888888888rem;
+}
+.sear i,.cate span,.cate input{
+  vertical-align: middle;
+}
+.sear i{
+  font-size: .57333333333333rem;
+}
+.sear .text-msg{
+  display: inline-block;
+}
+.sear .text-msg input{
+  width: 7.5rem;
+  height: .7rem;
+  padding-left: .8rem;
+  outline: none;
+  border: none;
+  color: #c1bdbd;
+  background:rgba(0,0,0,.08) url(../../images/search.png) .3rem .2rem/.4rem .4266666667rem no-repeat;
+  border-radius: 1.25rem;
+}

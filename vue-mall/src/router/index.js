@@ -11,6 +11,11 @@ import CategoryList from '@/components/category/categorylist'
 import Bill from '@/components/bill/bill'
 import Order from '@/components/order/order'
 import NowBuyModel from '@/components/product/nowbuymodel'
+import Message from '@/components/message/message'
+import PaySuccess from '@/components/pay/paysuccess'
+import Search from '@/components/search/search'
+import Share from '@/components/share/share'
+import LoadFail from '@/components/share/loadfail'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -53,10 +58,30 @@ export default new Router({
     {
       path:'/order',
       component:Order
-    }, 
+    },
     {
       path:'/nowbuymodel',
       component:NowBuyModel
+    },
+    {
+      path:'/message',
+      component:Message
+    },
+    {
+      path:'/paysuccess',
+      component:PaySuccess
+    },
+    {
+      path:'/search',
+      component:Search
+    },
+    {
+      path:'/share',
+      component:Share
+    },
+    {
+      path:'/loadfail',
+      component:LoadFail
     }
   ]
 })

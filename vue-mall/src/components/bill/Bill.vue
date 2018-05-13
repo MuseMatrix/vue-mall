@@ -9,9 +9,11 @@
         <a class="fr">完成</a>
       </div>
    </header>
-    <div class="text">
-      <label>抬头<i class="must">*</i></label>
-      <input type="text" placeholder="个人名称(必填)" name="bill"/>
+    <div class="radio">
+      <div class="text">
+        <label class="clp">抬头<i class="must">*</i></label>
+        <input type="text" placeholder="个人名称(必填)" name="bill"/>
+      </div>
     </div>
     <div class="radio">
       <div class="peop">
@@ -76,5 +78,6 @@
 </script>
 
 <style scoped>
+  @import '../../assets/css/common.css';
   @import '../../assets/css/bill/bill.css';
 </style>

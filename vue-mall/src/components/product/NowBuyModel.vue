@@ -2,20 +2,13 @@
   <div class="now-buy-model">
     <div class="modal-backdrop">
       <div class="modal">
-        <div class="modal-header">
-          <slot name="header">
-            <h2>这是Modal弹框的标题</h2>
-            <button type="button" class="btn-close">x</button>
-          </slot>
-        </div>
-        <div class="modal-body">
-          <slot name="body"> 这是Modal弹框的主体 </slot>
-        </div>
-        <div class="modal-footer">
-          <slot name="footer"> 这是Modal弹框的脚部
-            <button type="button" class="btn-green">关闭</button>
-          </slot>
-        </div>
+          <div class="product-o">
+            <img src="../../assets/images/product-o.png" height="110" width="110"/>
+            <div class="product-t">
+              <span>￥121.00</span>
+              <p>商品编号:9874635184</p>
+            </div>
+          </div>
       </div>
     </div>
   </div>

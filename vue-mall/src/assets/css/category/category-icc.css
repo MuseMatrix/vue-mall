@@ -1,18 +1,113 @@
-ul li .c-text{
+/*.snack-goods ul li .c-text{
   width: 2.88rem;
   font-size: 0.34rem;
   padding: .3rem.4rem;
   color: #333;
   border-bottom: .025rem solid #eee;
 }
-ul li .c-text h3{
+.snack-goods ul li .c-text h3{
   font-size: 13px;
 }
 
-ul li{
+.snack-goods ul li{
   position: relative;
   width: 4.45rem;
   margin: .3rem 0;
   border: 1px solid #EDEDED;
   flex: 0 1 auto;
+}*/
+.category-list-content ul li{
+  padding: .2rem 0;
+}
+.category-list-content ul li .c-text,.category-list-content ul li img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.category-list-content ul li .c-text{
+  width: 6.5rem;
+  font-size: 0.34rem;
+  padding: .3rem.4rem;
+  color: #333;
+  border-bottom: .025rem solid #eee;
+}
+.category-list-content ul li .c-text p{
+  padding: .3rem 0;
+  font-size: 0.45rem;
+  color: #ff0000;
+}
+.category-list-content ul li .c-text p i{
+  font-style: normal;
+  font-size: .2rem;
+  border: 0.025rem solid #ff0000;
+  border-radius: .1rem;
+}
+
+.chaff{
+  padding: 0 .22rem;
+}
+.chaff ul li{
+  padding: .2rem 0;
+  border-bottom: .025rem solid #eee;
+}
+.chaff ul li .c-text,.chaff ul li img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.chaff .c-text{
+  padding: 0 .3rem;
+}
+.chaff .c-text h3{
+  font-size: 0.375rem;
+}
+.chaff .c-text h3 i{
+  display: inline-block;
+  padding: 0 .08rem;
+  margin: 0 .06rem;
+  font-style: normal;
+  font-size: .3rem;
+  color: #fff;
+  border-radius: .1rem;
+}
+.chaff .c-text h3 i:nth-child(1){
+  background-color: #FF9900;
+}
+.chaff .c-text h3 i:nth-child(2){
+  background-color: #FE7181;
+}
+.chaff .c-text p:nth-child(2){
+  font-size: 0.325rem;
+}
+.chaff .c-text p:nth-child(3){
+  padding: .2rem 0;
+}
+.chaff .c-text .amt i{
+  font-size: 0.35rem;
+  font-style: normal;
+  padding: 0 .1rem;
+  color: #F80830;
+}
+
+.change{
+  padding: .425rem .375rem;
+}
+.change ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.change ul li{
+  display: inline-block;
+  padding: 0;
+  margin-bottom: .22rem;
+  border: 1px solid #eee;
+}
+.change ul li .c-text,.change ul li img{
+  display: block;
+  vertical-align: middle;
+}
+.change ul li .c-text{
+  padding: .15rem;
+}
+.change ul li .c-text h3{
+  padding: .1rem;
 }

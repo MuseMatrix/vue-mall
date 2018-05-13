@@ -1,0 +1,15 @@
+header{
+  border-bottom: 0.025rem solid #eee;
+  background-color: #fff;
+}
+.message-header{
+  background-color: #F5F5F5;
+}
+.message-header .head{
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: .3988888888888rem;
+}
+.message-header .head a{
+  color: #333333;
+}
