@@ -158,6 +158,9 @@
   font-size: .35rem;
   color: #ccc;
 }
+.settle p i{
+  font-style: normal;
+}
 .foot{
   position: fixed;
   bottom: 0;

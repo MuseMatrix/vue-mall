@@ -1,6 +1,6 @@
 <template>
   <div class="category-list-content-ic pt-5">
-    <div class="w9-m snack-goods">
+    <div class="w9-m snack-goods clbg">
       <ul class="clearfix">
         <li>
           <img src="../../assets/images/cate-icc.png" height="108" width="109"/>
