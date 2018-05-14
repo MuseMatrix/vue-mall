@@ -30,13 +30,16 @@
   background-color: #fff;
 }
 .btn button:nth-child(1){
-  padding: .35rem 1.57rem;
+  width: 4.375rem;
+  padding: .35rem 1.55rem;
   color:#999;
   border-right: 0.025rem solid #eee;
   border-radius: 0 0 0 .5rem;
 }
 .btn button.con{
-  padding: .35rem 1.57rem;
+  width: 4.375rem;
+  white-space: nowrap;
+  padding: .35rem 1.55rem;
   color:#0071E1;
   border-radius: 0 0 .5rem 0;
 }
