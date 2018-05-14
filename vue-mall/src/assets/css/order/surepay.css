@@ -1,6 +1,8 @@
 .model-center{
   width: 8.75rem;
   bottom: auto;
+  left:auto;
+  right:auto;
   border-radius: .5rem;
 }
 .sure-p{
@@ -28,12 +30,14 @@
   background-color: #fff;
 }
 .btn button:nth-child(1){
-  padding: .35rem 1.5rem;
+  padding: .35rem 1.57rem;
   color:#999;
   border-right: 0.025rem solid #eee;
+  border-radius: 0 0 0 .5rem;
 }
 .btn button.con{
-  padding: .35rem 1.5rem;
+  padding: .35rem 1.57rem;
   color:#0071E1;
+  border-radius: 0 0 .5rem 0;
 }
 
