@@ -1,5 +1,5 @@
 <template>
-  <div class="message-content">
+  <div class="message-content w10">
     <ul class="msg">
       <li>
         <img src="../../assets/images/lit.png" height="50" width="50"/>
@@ -12,7 +12,7 @@
         <p>通知</p>
       </li>
     </ul>
-    <div class="infor-line"></div>
+    <div class="lit-line"></div>
     <ul class="msg-c">
       <li>
         <p class="clearfix">

@@ -14,6 +14,10 @@
 .order .category{
   margin-left: .22rem;
 }
+.order .msg{
+  font-size: .425rem;
+  color: #333;
+}
 .content{
   padding: 1.18rem 0;
 }
@@ -63,7 +67,7 @@
     font-weight: lighter;
     padding: .05rem 0;
 }
-.order .shop .explain p.price{
+.order .shop .explain .price{
   color: red;
   font-size: .5rem;
 }

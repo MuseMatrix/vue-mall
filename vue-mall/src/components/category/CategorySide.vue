@@ -1,5 +1,5 @@
 <template>
-  <div class="category-side">
+  <div class="category-side clearfix">
     <ul class="category-l fl">
         <li>零食百货</li>
         <li>美妆护肤</li>

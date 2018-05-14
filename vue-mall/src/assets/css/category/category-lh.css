@@ -26,6 +26,8 @@
   padding-left: .8rem;
   outline: none;
   border: none;
+  color:#333333;
+  font-size: .3rem;
   background:rgba(0,0,0,.08) url(../../images/search.png) .3rem .2rem/.4rem .4266666667rem no-repeat;
   border-radius: 1.25rem;
 }

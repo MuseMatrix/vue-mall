@@ -16,11 +16,14 @@ import PaySuccess from '@/components/pay/paysuccess'
 import Search from '@/components/search/search'
 import Share from '@/components/share/share'
 import LoadFail from '@/components/share/loadfail'
+import Payment from '@/components/order/Payment'
+import SurePay from '@/components/order/surepay'
+
 Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/home',
       component: Home
     },
     {
@@ -40,7 +43,7 @@ export default new Router({
       component:AfterService
     },
     {
-      path:'/category',
+      path:'/',
       component:Category
     },
     {
@@ -82,6 +85,14 @@ export default new Router({
     {
       path:'/loadfail',
       component:LoadFail
+    },
+    {
+      path:'/payment',
+      component:Payment
+    },
+    {
+      path:'/surepay',
+      component:SurePay
     }
   ]
 })

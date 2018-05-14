@@ -4,7 +4,7 @@
         <a class="category fl" href="">
           <router-link to="/category">分类</router-link>
         </a>
-        <router-link to="/nowbuymodel">
+        <router-link to="/surepay">
           <a class="msg fr" href="">
             <i class="iconfont icon-xiaoxi"></i>
           </a>

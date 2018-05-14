@@ -3,9 +3,11 @@
         <div class="cate w9-2">
           <a class=""><i class="iconfont icon-liebiao"></i></a>
           <div class="text-msg">
-            <input class="search" type="text" placeholder="" value="化妆品">
+            <input class="search" type="text" placeholder="" value="火锅">
           </div>
-          <a class=""><span>取消</span></a>
+          <router-link to="/">
+            <a class=""><span>取消</span></a>
+          </router-link>
         </div>
     </div>
 </template>

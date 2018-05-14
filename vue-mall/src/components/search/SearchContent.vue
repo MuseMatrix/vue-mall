@@ -1,6 +1,7 @@
+<!--
 <template>
     <div class="search-content">
-        <div class="hot" v-show="show">
+        <div class="hot" v-show="true">
             <h3>热门搜索</h3>
             <ul>
               <li>日用百货</li>
@@ -12,7 +13,7 @@
               <li>护肤</li>
             </ul>
         </div>
-        <div class="history" v-show="show">
+        <div class="history" v-show="true">
           <h3 class="clearfix">
             <span class="fl">历史搜索</span>
             <span class="fr">清除</span>
@@ -28,7 +29,7 @@
             <li>孔府家酒</li>
           </ul>
         </div>
-      <ul class="search-list">
+      <ul class="search-list" v-show="show">
         <li>火锅底料</li>
         <li>火锅底料</li>
         <li>火锅底料</li>
@@ -57,3 +58,4 @@
 <style scoped>
   @import "../../assets/css/search/search-c.css";
 </style>
+-->

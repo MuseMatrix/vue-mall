@@ -3,7 +3,7 @@
       <header>
         <div class="head w9-2">
           <a class="bill-back fl">
-            <i class="iconfont icon-fanhui"></i>
+            <i class="iconfont icon-fanhui" @click="back"></i>
           </a>
           <a class="msg">支付结果</a>
           <a class="fr">完成</a>
@@ -57,7 +57,12 @@
 
 <script>
     export default {
-        name: "pay-success"
+        name: "pay-success",
+        methods:{
+          back(){
+            return this.$router.go(-1);
+          }
+        }
     }
 </script>
 

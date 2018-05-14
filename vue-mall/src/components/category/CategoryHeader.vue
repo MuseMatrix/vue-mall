@@ -1,10 +1,16 @@
 <template>
-  <div class="category-header">
-    <div class="head">
-      <a class="category fl">
-        <i class="iconfont icon-fanhui"></i>
+  <div class="category-header clearfix">
+    <div class="cate w10">
+      <div class="text-msg fl">
+        <router-link to="/search">
+          <input class="search" type="text" placeholder="" value="请输入店铺或美食">
+        </router-link>
+      </div>
+      <a class="fr">
+        <router-link to="/message">
+          <i class="iconfont icon-xiaoxi"></i>
+        </router-link>
       </a>
-      <a class="msg">分类</a>
     </div>
   </div>
 </template>

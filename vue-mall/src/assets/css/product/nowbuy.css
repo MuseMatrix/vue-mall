@@ -1,37 +1,92 @@
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0,0,0,.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.modal {
-  position: fixed;
-  width: 10rem;
-  bottom: 0;
-  background-color: #fff;
-  overflow-x:auto; display: flex;
-  flex-direction: column;
-}
 .product-o{
+  position: relative;
   padding-top: .3rem;
   padding-left: .25rem;
   padding-bottom: .5rem;
+  border-bottom: .025rem solid #eee;
+}
+.product-o i{
+  position: absolute;
+  top:.3rem;
+  right:.25rem;
+  font-size: .95rem;
+  color:#999;
 }
 .product-o .product-t{
   display: inline-block;
+  padding-top: 1.9rem;
+  padding-left: .525rem;
+}
+.product-o img{
+  width: 2.75rem;
+  height: 2.75rem;
+  vertical-align: bottom;
 }
 .product-o .product-t span{
   display: inline-block;
-  padding-top: 1.5rem;
   font-size: .45rem;
   color:#F80830;
 }
 .product-o .product-t p{
   font-size: .325rem;
   color: #666;
+}
+.feature{
+  padding: 0 .275rem;
+  border-bottom: .025rem solid #eee;
+}
+.feature h3{
+  padding: .525rem 0;
+  font-size: .35rem;
+  font-weight: normal;
+  color: #333;
+}
+.feature ul li{
+  display: inline-block;
+  padding: .2rem;
+  margin-right: .25rem;
+  margin-bottom: .35rem;
+  font-size: .325rem;
+  background-color: #F5F5F5;
+  border-radius: 1.25rem;
+}
+.tally input{
+  width: 0.75rem;
+  padding: .08rem;
+  outline: none;
+  border-top: 0.005rem solid #ccc;
+  border-bottom: 0.005rem solid #ccc;
+  border-right: none;
+  border-left: none;
+  color: #333;
+  vertical-align: middle;
+  text-align: center;
+}
+.tally{
+  width: 3.125rem;
+  height: .575rem;
+}
+.tally button{
+  padding: .08rem .3rem;
+  outline: none;
+  vertical-align: middle;
+  color: #333;
+  border: 0.005rem solid #ccc;
+  background: #fff;
+}
+.price .txt{
+  font-size: .35rem;
+  color: #333;
+}
+.price{
+  padding: .65rem .275rem 1.175rem;
+}
+.sure{
+  width: 10rem;
+  line-height: 1.25rem;
+  outline: none;
+  border: none;
+  font-size: .4rem;
+  color: #fff;
+  background-color: #F80830;
 }

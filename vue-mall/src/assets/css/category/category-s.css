@@ -1,3 +1,6 @@
+.category-side{
+  display: inline-block;
+}
 .category-l{
   width: 2.5rem;
   padding-top: 1.125rem;

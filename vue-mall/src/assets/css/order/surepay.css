@@ -1,0 +1,39 @@
+.model-center{
+  width: 8.75rem;
+  bottom: auto;
+  border-radius: .5rem;
+}
+.sure-p{
+  text-align: center;
+  border-bottom: .025rem solid #eee;
+}
+.sure-p h3{
+  font-size: .45rem;
+  color: #333;
+  padding: .625rem 2.475rem .275rem;
+}
+.sure-p p{
+  padding: 0 1.2rem .175rem;
+  font-size: .375rem;
+  color: #666;
+}
+.btn{
+  width: 8.75rem;
+  text-align: center;
+}
+.btn button{
+  outline: none;
+  border: none;
+  font-size: .4rem;
+  background-color: #fff;
+}
+.btn button:nth-child(1){
+  padding: .35rem 1.5rem;
+  color:#999;
+  border-right: 0.025rem solid #eee;
+}
+.btn button.con{
+  padding: .35rem 1.5rem;
+  color:#0071E1;
+}
+

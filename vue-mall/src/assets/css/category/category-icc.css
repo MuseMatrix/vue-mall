@@ -24,9 +24,9 @@
   vertical-align: middle;
 }
 .category-list-content ul li .c-text{
-  width: 6.5rem;
+  width: 5.6rem;
   font-size: 0.34rem;
-  padding: .3rem.4rem;
+  padding: .6rem.4rem;
   color: #333;
   border-bottom: .025rem solid #eee;
 }
@@ -104,6 +104,10 @@
 .change ul li .c-text,.change ul li img{
   display: block;
   vertical-align: middle;
+}
+.change ul li img{
+  width: 4.4rem;
+  height: 3.325rem;
 }
 .change ul li .c-text{
   padding: .15rem;

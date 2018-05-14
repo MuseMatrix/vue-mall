@@ -1,7 +1,7 @@
 <template>
     <div class="product-details">
         <div class="detail-h clearfix">
-            <a class="back fl"><i class="iconfont icon-fanhui"></i></a>
+            <a class="back fl" @click="back"><i class="iconfont icon-fanhui"></i></a>
             <a class="share fr"><i class="iconfont icon-fenxiang"></i></a>
             <div class="cate">
               <a><router-link to="/product">商品</router-link></a>
@@ -14,7 +14,12 @@
 
 <script>
     export default {
-        name: "product-details"
+        name: "product-details",
+        methods:{
+          back(){
+            return this.$router.go(-1);
+          }
+        }
     }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="category-list-content-ic pt-5">
-    <div class="w9-m snack-goods clbg" v-show="true">
+    <div class="w9-m snack-goods clbg" v-show="false">
       <ul class="clearfix">
         <li>
           <img src="../../assets/images/cate-icc.png" height="108" width="109"/>
@@ -161,111 +161,97 @@
         </li>
       </ul>
     </div>
-    <div class="chaff" v-show="false">
+    <div class="chaff" v-show="true">
       <ul>
         <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
+          <router-link to="/details">
+            <a>
+              <img src="../../assets/images/chaff.png" height="75" width="100"/>
+              <div class="c-text">
+                <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
+                <p>新鲜大海鱼火锅来自海洋生态</p>
+                <p class="amt">
+                  <span>返余额</span><i>14%</i>
+                  <span>返现</span><i>25%</i>
+                </p>
+              </div>
+            </a>
+          </router-link>
         </li>
         <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
+          <router-link to="/details">
+            <a>
+              <img src="../../assets/images/chaff.png" height="75" width="100"/>
+              <div class="c-text">
+                <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
+                <p>新鲜大海鱼火锅来自海洋生态</p>
+                <p class="amt">
+                  <span>返余额</span><i>14%</i>
+                  <span>返现</span><i>25%</i>
+                </p>
+              </div>
+            </a>
+          </router-link>
         </li>
         <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
+          <router-link to="/details">
+            <a>
+              <img src="../../assets/images/chaff.png" height="75" width="100"/>
+              <div class="c-text">
+                <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
+                <p>新鲜大海鱼火锅来自海洋生态</p>
+                <p class="amt">
+                  <span>返余额</span><i>14%</i>
+                  <span>返现</span><i>25%</i>
+                </p>
+              </div>
+            </a>
+          </router-link>
         </li>
         <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
+          <router-link to="/details">
+            <a>
+              <img src="../../assets/images/chaff.png" height="75" width="100"/>
+              <div class="c-text">
+                <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
+                <p>新鲜大海鱼火锅来自海洋生态</p>
+                <p class="amt">
+                  <span>返余额</span><i>14%</i>
+                  <span>返现</span><i>25%</i>
+                </p>
+              </div>
+            </a>
+          </router-link>
         </li>
         <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
+          <router-link to="/details">
+            <a>
+              <img src="../../assets/images/chaff.png" height="75" width="100"/>
+              <div class="c-text">
+                <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
+                <p>新鲜大海鱼火锅来自海洋生态</p>
+                <p class="amt">
+                  <span>返余额</span><i>14%</i>
+                  <span>返现</span><i>25%</i>
+                </p>
+              </div>
+            </a>
+          </router-link>
         </li>
         <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="../../assets/images/chaff.png" height="75" width="100"/>
-            <div class="c-text">
-              <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
-              <p>新鲜大海鱼火锅来自海洋生态</p>
-              <p class="amt">
-                <span>返余额</span><i>14%</i>
-                <span>返现</span><i>25%</i>
-              </p>
-            </div>
-          </a>
+          <router-link to="/details">
+            <a>
+              <img src="../../assets/images/chaff.png" height="75" width="100"/>
+              <div class="c-text">
+                <h3>潮汕渔港火锅<i>惠</i><i>积</i></h3>
+                <p>新鲜大海鱼火锅来自海洋生态</p>
+                <p class="amt">
+                  <span>返余额</span><i>14%</i>
+                  <span>返现</span><i>25%</i>
+                </p>
+              </div>
+            </a>
+          </router-link>
         </li>
       </ul>
     </div>

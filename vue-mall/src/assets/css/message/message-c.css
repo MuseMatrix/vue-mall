@@ -1,5 +1,7 @@
+
 .msg{
   display:flex;
+  width:9.19rem;
   padding:0.45rem;
   text-align:center;
   justify-content: space-around;
@@ -7,17 +9,15 @@
 .msg li p{
   padding-top:.2rem;
 }
-.msg li img{}
-icon-msg
 .infor-line{
   width: 10rem;
   height: .2rem;
-  background: url(../../images/infor-line.png) 0.175rem 0/contain no-repeat;
+  background: url(../../images/infor-line.png) -1rem 0/cover no-repeat;
 }
 .lit-line{
   width: 10rem;
   height: .2rem;
-  background: url(../../images/lit-line.png) -0.15rem 0/contain no-repeat;
+  background: url(../../images/lit-line.png) -3.7rem 0/cover no-repeat;
 }
 .msg-c li{
   padding: 0.45rem .22rem;

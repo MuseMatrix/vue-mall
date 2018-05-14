@@ -1,5 +1,5 @@
 <template>
-  <div class="category-content">
+  <div class="category-content clearfix">
     <ul class="img-l fr">
         <li>
           <a>

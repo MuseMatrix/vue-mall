@@ -1,9 +1,8 @@
 .sear{
   position: fixed;
   z-index: 2;
-  padding: 0 .401111111rem;
+  padding: 0 .3rem;
   line-height: 1.14rem;
-  text-align: center;
   border-bottom: 0.025rem solid #eee;
   background-color: #fff;
 }
@@ -26,6 +25,11 @@
   outline: none;
   border: none;
   color: #c1bdbd;
+  vertical-align: middle;
   background:rgba(0,0,0,.08) url(../../images/search.png) .3rem .2rem/.4rem .4266666667rem no-repeat;
   border-radius: 1.25rem;
+}
+.sear a{
+  vertical-align: middle;
+  padding-left: .1rem;
 }

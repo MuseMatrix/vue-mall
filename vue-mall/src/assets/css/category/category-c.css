@@ -1,9 +1,15 @@
+.category-content{
+  position: absolute;
+  display: inline-block;
+  width: 7.5rem;
+}
 .img-l{
   display: flex;
   width: 7.5rem;
   justify-content: space-around;
 }
 .img-l li{
+  width: 2.5rem;
   line-height: 3;
   padding-top: .6rem;
   font-size: 0.35rem;
@@ -14,4 +20,5 @@
 }
 .img-l li a{
   display: inline-block;
+  width: 2.5rem;
 }

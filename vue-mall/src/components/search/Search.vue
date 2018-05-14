@@ -3,8 +3,8 @@
     <div class="wrap w10">
       <!--详情头部区-->
       <SearchHeaderView></SearchHeaderView>
-      <!--详情图片说明区-->
-      <SearchContentView></SearchContentView>
+<!--      &lt;!&ndash;详情图片说明区&ndash;&gt;
+      <SearchContentView></SearchContentView>-->
 
     </div>
   </div>
@@ -12,12 +12,12 @@
 
 <script>
   import SearchHeaderView from './SearchHeader.vue';
-  import SearchContentView from './SearchContent.vue';
+/*  import SearchContentView from './SearchContent.vue';*/
   export default {
     name: "search",
     components:{
       SearchHeaderView,
-      SearchContentView,
+/*      SearchContentView,*/
     }
   }
 </script>
