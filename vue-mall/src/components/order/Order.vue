@@ -50,13 +50,15 @@
           </div>
           <div class="act-f clearfix">
             <span class="fl">使用积分<i>可用积分200</i></span>
-            <span class="cked fr" :class="{'cked':isA,'uck':!isA}" @click="toggle"></span>
+            <span class="fr" :class="{'cked':isA,'uck':!isA}" @click="toggle"></span>
           </div>
         </div>
-        <div class="issue clearfix">
+        <router-link to="/bill">
+          <div class="issue clearfix">
             <span class="fl">发票</span>
             <i class="iconfont icon-jiantouyou fr"></i>
-        </div>
+          </div>
+        </router-link>
         <div class="settle">
             <p class="clearfix">
               <span class="fl">商品金额</span>
@@ -117,10 +119,9 @@
                 <span class="uck fr"></span>
               </li>
             </ul>
-
               <div class="now-d">
                 <router-link to="/paysuccess">
-                  <button class="now-p">立即支付(￥<span ref="nowTotal">145.00</span>)</button>
+                  <button class="now-p">立即支付(<span ref="nowTotal"></span>)</button>
                 </router-link>
               </div>
           </div>
@@ -179,7 +180,7 @@
           return;
         }
         this.count--;
-        this.$refs.totalamount.innerText = parseFloat(this.$refs.price.innerText * this.count).toFixed(2  );
+        this.$refs.totalamount.innerText = parseFloat(this.$refs.price.innerText * this.count).toFixed(2);
       },
       toggle(){
         this.isA = !this.isA;

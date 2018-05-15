@@ -12,11 +12,16 @@
 <script>
   import CategoryListHeaderView from './CategoryListHeader.vue';
   import CategoryListView from './CategoryListContentIc.vue';
+
+  const url = "http://192.168.1.188:8080/malls-provider-http";
   export default {
     name: "categorylist",
     components:{
       CategoryListHeaderView,
       CategoryListView,
+    },
+    mounted:{
+    /*  this.$axios.post("")*/
     }
   }
 </script>

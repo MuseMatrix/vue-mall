@@ -3,7 +3,7 @@
     <header>
       <div class="head w9-2">
         <a class="bill-back fl">
-          <i class="iconfont icon-fanhui"></i>
+          <i class="iconfont icon-fanhui" @click="back"></i>
         </a>
         <a class="msg">发票信息</a>
         <a class="fr">完成</a>
@@ -72,6 +72,11 @@
     data(){
       return{
         "show":false
+      }
+    },
+    methods:{
+      back:function(){
+        this.$router.go(-1);
       }
     }
   }

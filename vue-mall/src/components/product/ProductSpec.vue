@@ -1,10 +1,12 @@
 <template>
     <div class="details-desc w10">
       <a>
-        <div class="spec-panel clearfix   ">
-          <span class="fl">商品规格</span>
-          <i class="iconfont icon-jiantouyou fr"></i>
-        </div>
+        <router-link to="/spec">
+          <div class="spec-panel clearfix">
+            <span class="fl">商品规格</span>
+            <i class="iconfont icon-jiantouyou fr"></i>
+          </div>
+        </router-link>
       </a>
       <div class="detail-acess">
         <div class="spec-panel clearfix panel-line">

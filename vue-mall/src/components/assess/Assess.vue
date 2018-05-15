@@ -1,5 +1,5 @@
 <template>
-  <div class="assess pb-5">
+  <div class="assess pb-5 bgc">
     <div class="wrap w10">
       <!--评价头部区-->
       <AssessHeaderView></AssessHeaderView>

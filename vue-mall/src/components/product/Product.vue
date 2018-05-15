@@ -22,8 +22,16 @@
     import ProductSpecView from './ProductSpec.vue';
     import ProductFooterView from './ProductFooter.vue';
     import ProductBottomView from './ProductBottom.vue';
+
+    const url = "http://192.168.1.188:8080/malls-provider-http";
+
     export default {
         name: "product",
+        data(){
+          return{
+
+          }
+        },
         components:{
             ProductHeaderView,
             ProductImageView,

@@ -1,7 +1,7 @@
 @charset "utf-8";
 body, p, ul, dl, dd, ol, h1, h2, h3, h4, h5, h6{ margin:0;}
 ul,ol{ padding-left:0;list-style:none;}
-body{font-size: 12px; font-family: Helvetica;}
+body{font-size: 12px; font-family: Helvetica; background-color: #F5F5F7;}
 a{text-decoration: none; color: #999;}
 img{vertical-align: top;}
 
@@ -17,5 +17,8 @@ img{vertical-align: top;}
 .pb-5{padding-bottom: 1.25rem}
 .pt-5{padding-top: 1.25rem}
 
+
 .modal-backdrop {position: fixed;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0,0,0,.3);display: flex;justify-content: center;align-items: center;}
 .modal {position: fixed;width: 10rem;bottom: 0;left:0;right:0;background-color: #fff;/* overflow-x:auto; display: flex;flex-direction: column; */}
+
+.bgc{background-color: #fff}

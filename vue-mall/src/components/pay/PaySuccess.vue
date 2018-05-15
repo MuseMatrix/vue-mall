@@ -1,5 +1,5 @@
 <template>
-    <div class="pay-success">
+    <div class="pay-success bgc">
       <header>
         <div class="head w9-2">
           <a class="bill-back fl">

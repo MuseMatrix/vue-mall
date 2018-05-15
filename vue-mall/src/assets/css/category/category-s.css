@@ -1,16 +1,35 @@
 .category-side{
+  display: flex;
+  position: fixed;
+  top:.05rem;
+  left: 0;
+  bottom: .9rem;
+  width: 100%;
+  overflow: hidden;
+}
+.category-side .menu-wrapper{
+  flex: 0 0 2.48rem;
+  height: 100%;
+  width: 2.48rem;
+  background: #ffffff;
+  border-right: 0.025rem solid #eee;
+}
+.category-side{
   display: inline-block;
 }
 .category-l{
+  position: absolute;
   width: 2.5rem;
   padding-top: 1.125rem;
   background-color: #fff;
 }
 .category-l li{
-  line-height: 1.5rem;
+  line-height: 1.3888rem;
   font-size: 0.3625rem;
   color: #6F6F6F;
   border-bottom: 0.025rem solid #eee;
   border-right: 0.025rem solid #eee;
   text-align: center;
 }
+
+
