@@ -9,3 +9,6 @@
   border-right: 0.025rem solid #eee;
   justify-content: space-around;
 }
+.d-title .router-link-active{
+  color: #cc0e11;
+}

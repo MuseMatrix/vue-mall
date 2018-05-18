@@ -1,16 +1,23 @@
 <template>
     <div class="details-image w9-m">
-        <img src="../../assets/images/detail-t.png"/>
-        <img src="../../assets/images/detail-t.png"/>
-        <img src="../../assets/images/detail-t.png"/>
-        <img src="../../assets/images/detail-t.png"/>
-        <img src="../../assets/images/detail-t.png"/>
+        <ul>
+          <li v-for="(item,index) in productIntroduceList"><img :src="srcurl+item.picIndex"/></li>
+        </ul>
     </div>
 </template>
 
 <script>
     export default {
-        name: "details-image"
+        name: "details-image",
+        data(){
+          return{
+            srcurl:"https://jhoss02.oss-cn-beijing.aliyuncs.com/",
+            productIntroduceList:""
+          }
+        },
+        mounted(){
+            this.productIntroduceList = JSON.parse(localStorage.getItem("productIntroduceList"));
+        }
     }
 </script>
 

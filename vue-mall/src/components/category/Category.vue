@@ -14,6 +14,7 @@
 </template>
 
 <script>
+  import Qs from 'qs';
   import CategoryHeaderView from './CategoryHeader.vue';
   import CategorySideView from './CategorySide.vue';
   /*import CategoryContentView from './CategoryContent.vue';*/
@@ -26,8 +27,11 @@
     data(){
       return{
         topdata:"",
-        secondary:"",
-        message:""
+        url:"/api/api/malls/product/queryMallsProductCatalog",
+        parms:{
+          "userId":"0",
+          "requestId":"0"
+        }
       }
     },
     components:{
@@ -37,7 +41,13 @@
       CategoryFootView
     },
     mounted(){
-      this.$axios.post('api/api/malls/product/queryMallsProductCatalog',{"userId":"0","requestId":"0"}).then((res) =>{
+      console.log(this.parms);
+      this.$axios.post(this.url,Qs.stringify(this.parms),{
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        }).then((res) =>{
+        console.log(res);
         this.topdata = res.data.datalist;
       }).catch((error) =>{
         console.log(res);

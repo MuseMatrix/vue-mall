@@ -24,7 +24,7 @@ header{
 }
 .bill .text label{
   display: inline-block;
-  width: 2rem;
+  width: 2.5rem;
   padding: 0 .5rem;
 }
 .bill .text input{

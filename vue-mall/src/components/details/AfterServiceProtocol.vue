@@ -2,28 +2,24 @@
   <div class="after-service-protocol">
     <div class="service-protocol w9-2">
       <p>尊敬的用户：</p>
-      <p>感谢您购买出门问问智能产品！为了维护您的合法权益，确保您在放心使用产品的同时，享受到北京羽扇智信息科技有限公司（ " 我们”或“羽扇智”）提供的优质、高效、规范的售后服务，请您详细阅读以下条款：</p>
-      <p class="ser-pre">一、售后服务指南
-      无论您在中华人民共和国境内（不包括港、澳、台地区）何处购买并使用的 Ticwatc智能手表／ Ticmirror 问问魔镜出现本服务承诺责任范围内的故障，您均可以凭有效的保修卡联系出门问问售后服务热线 400 一 883 一 8390 进行维修咨询，您也可以通过访问官方网站（ vvvvvv . ticwear . com ）进行查询。</p>
-
-      <p>享受本服务政策所列各项售后服务的部件范围为出厂时所配置的 Ticwatch 智能手表表头／ Ticmirror 问问魔镜及其附件。</p>
-      <p class="ser-pre">二、标准服务承诺
-      在满足售后服务政策规定的情况下，如您购买的产品出现性能故障，经羽扇智确认不存在各项不符合售后服务政策要求且确为产品自身质量问题导致的性能故障的，您可以凭有效的保修卡享受以下服务：</p>
-      <p>自购买之日起 7 天内，由原销售商提供退货、免费更换同型号产品或维修服务；自购买之日起 15 天内，由原销售商提供免费更换同型号产品或维修服务；自购买之日起 1 年内，由羽扇智提供的免费质保服务。享受免费质保服务应满足以下条件：</p>
-      <p class="ser-pre">
-        <p>不存在拆卸、未授权修理维修、改装等情形；</p>
-        <p>不存在非正常工作环境（如强磁场、强电场）下使用；</p>
-        <p>不存在未按产品使用说明的要求使用而造成损坏；</p>
-        <p>不存在因保管不善而造成撞击、跌落、弯折、置于潮湿场所或进液等引起故障。</p>
-        <p>享受免费退货、免费更换同型号产品除应满足享受免费质保服务</p>
-      </p>
+      <p>{{afterSaleService}}</p>
     </div>
   </div>
 </template>
 
 <script>
     export default {
-        name: "after-service-protocol"
+        name: "after-service-protocol",
+      data(){
+        return{
+          afterSaleService:""
+        }
+      },
+      mounted(){
+        console.log("啦啦啦啦啦啦"+localStorage.getItem("afterSaleService"));
+        this.afterSaleService = localStorage.getItem("afterSaleService");
+
+      }
     }
 </script>
 

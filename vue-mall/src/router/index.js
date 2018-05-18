@@ -28,11 +28,18 @@ export default new Router({
     },
     {
       path:'/product',
+      name:"product",
       component:Product
     },
     {
       path:'/details',
-      component:Details
+      name:'details',
+      component:Details,
+/*     linkActiveClass: 'mui-active',
+      children:[//子路由
+        {path:'/spec',component:Spec},
+        {path:'/afterservice',component:AfterService}
+      ]*/
     },
     {
       path:'/spec',
@@ -52,10 +59,12 @@ export default new Router({
     },
     {
       path:'/categorylist',
+      name:"categorylist",
       component:CategoryList
     },
     {
       path:'/bill',
+      name:'bill',
       component:Bill
     },
     {

@@ -1,6 +1,6 @@
 .detail-h{
   position: fixed;
-  z-index: 1;
+  z-index: 9;
   top: 0;
   width: 9.4556666666666rem;
   padding: 0 .266666666666rem;
@@ -20,14 +20,13 @@
   display: inline-block;
   padding: 0 .266666666666rem;
 }
-.detail-h .cate a:after{
-  display: none;
-  content:"";
-/*  border-bottom: .05rem solid #cc0e11;*/
-}
-.detail-h .cate a:hover{
+.detail-h .router-link-active{
   color: #cc0e11;
 }
-.detail-h .cate a:hover:after{
+.detail-h .router-link-active:after{
   display: block;
+  content:"";
+  color:#cc0e11;
+  border-bottom: .05rem solid #cc0e11;
 }
+

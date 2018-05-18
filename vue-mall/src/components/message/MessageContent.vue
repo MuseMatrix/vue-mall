@@ -14,7 +14,21 @@
     </ul>
     <div class="lit-line"></div>
     <ul class="msg-c">
-      <li>
+      <li v-for="(item,index) of datalist">
+        <p class="clearfix">
+          <span class="fl" v-if="sendStatus == '00'">发货状态:未发货</span>
+          <span class="fl" v-if="sendStatus == '01'">发货状态:已发货</span>
+          <span class="fl" v-if="sendStatus == '02'">发货状态：部分发货</span>
+          <time class="fr">今天12:10</time>
+        </p>
+        <p>
+          你所购买的{{item.productName}}，。
+        </p>
+        <p>
+          订单编号:{{item.ordersOrderNo}}
+        </p>
+      </li>
+<!--      <li>
         <p class="clearfix">
           <span class="fl">商品已发货</span>
           <time class="fr">今天12:10</time>
@@ -25,62 +39,15 @@
         <p>
           订单编号:47841641461
         </p>
-      </li>
-      <li>
-        <p class="clearfix">
-          <span class="fl">商品已发货</span>
-          <time class="fr">今天12:10</time>
-        </p>
-        <p>
-          你所购买的海底捞速食火锅，已经发货。
-        </p>
-        <p>
-          订单编号:47841641461
-        </p>
-      </li>
-      <li>
-        <p class="clearfix">
-          <span class="fl">商品已发货</span>
-          <time class="fr">今天12:10</time>
-        </p>
-        <p>
-          你所购买的海底捞速食火锅，已经发货。
-        </p>
-        <p>
-          订单编号:47841641461
-        </p>
-      </li>
-      <li>
-        <p class="clearfix">
-          <span class="fl">商品已发货</span>
-          <time class="fr">今天12:10</time>
-        </p>
-        <p>
-          你所购买的海底捞速食火锅，已经发货。
-        </p>
-        <p>
-          订单编号:47841641461
-        </p>
-      </li>
-      <li>
-        <p class="clearfix">
-          <span class="fl">商品已发货</span>
-          <time class="fr">今天12:10</time>
-        </p>
-        <p>
-          你所购买的海底捞速食火锅，已经发货。
-        </p>
-        <p>
-          订单编号:47841641461
-        </p>
-      </li>
+      </li>-->
     </ul>
   </div>
 </template>
 
 <script>
     export default {
-        name: "message-content"
+        name: "message-content",
+        props:["datalist"],
     }
 </script>
 

@@ -20,9 +20,6 @@
       CategoryListHeaderView,
       CategoryListView,
     },
-    mounted:{
-    /*  this.$axios.post("")*/
-    }
   }
 </script>
 

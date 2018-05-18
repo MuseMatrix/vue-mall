@@ -38,7 +38,7 @@
         </ul>
       </div>
       <ul class="search-list" v-show="sw">
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
+        <router-link :to="{name:'categorylist',params:{id:1}}"><li>火锅底料</li></router-link>
         <router-link to="/categorylist"><li>火锅底料</li></router-link>
         <router-link to="/categorylist"><li>火锅底料</li></router-link>
         <router-link to="/categorylist"><li>火锅底料</li></router-link>

@@ -23,27 +23,31 @@
       <div class="modal-backdrop">
         <div class="modal">
           <div class="product-o">
-            <img src="../../assets/images/product-o.png" height="110" width="110"/>
+              <img v-for="(item,index) in bannerPicIndexList" v-if="index == 0" :src="srcurl+item.picIndex" height="110" width="110"/>
             <div class="product-t">
-              <span>￥121.00</span>
-              <p>商品编号:9874635184</p>
+              <span>￥{{productPrice}}</span>
+              <p>商品编号:{{productId}}</p>
             </div>
             <i class="iconfont icon-guanbi" @click="closeModal"></i>
           </div>
-          <div class="feature">
+<!--          <div class="feature">
             <h3>食品口味</h3>
             <ul>
               <li>A款儿童喜爱</li>
               <li>B款甜味算啦</li>
             </ul>
-          </div>
+          </div>-->
           <div class="price">
             <span class="txt fl">购买数量</span>
             <div class="tally fr">
               <button class="sub" @click="sub">-</button><input type="text" name="" value="count" v-model="count"><button class="add" @click="add">+</button>
             </div>
           </div>
-          <router-link to="/order"><button class="sure">确定</button></router-link>
+          <router-link :to="{name:'order',query:{
+            counter:count,
+            productId:productId,
+            merchantId:merchantId,
+            }}"><button class="sure">确定</button></router-link>
         </div>
       </div>
     </div>
@@ -53,10 +57,19 @@
 <script>
     export default {
       name: "product-bottom",
+      props:[
+          "productName",
+          "productMark",
+          "productPrice",
+          "productId",
+          "bannerPicIndexList",
+          "merchantId",
+        ],
       data(){
           return{
             isModelVisible:false,
-            count:0
+            count:0,
+            srcurl:"https://jhoss02.oss-cn-beijing.aliyuncs.com/"
           }
       },
       methods:{

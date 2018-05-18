@@ -2,146 +2,16 @@
   <div class="category-side clearfix">
     <div class="menu-wrapper" ref="menuWrappers">
       <ul class="category-l fl">
-          <li v-for="(item,index) in topdata" @click="cate(item.childCatalogList)">{{item.catalogName}}</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
-          <li>苹果</li>
+          <li v-for="(item,index) in topdata" @click="cate(index)" :class="{active:index == num}">{{item.catalogName}}</li>
       </ul>
     </div>
     <div class="category-content clearfix">
-      <ul class="img-l fr" >
- <!--       v-for="(item,index) in topdata"-->
- <!--       <li v-for="(ite,index1) in item.childCatalogList">
+      <ul class="img-l fr" v-for="(item,index) in topdata" v-if="index == num">
+        <li v-for="(ite,index1) in item.childCatalogList">
           <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
+            <router-link :to="{name:'categorylist',query:{id:item.catalogId}}">
+              <img :src="srcurl+ite.catalogPicIndex" height="50" width="50"/>
               <p>{{ite.catalogName}}</p>
-            </router-link>
-          </a>
-        </li>     -->
-        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li>        <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li> <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li> <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li> <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
-            </router-link>
-          </a>
-        </li> <li>
-          <a>
-            <router-link to="/categorylist">
-              <img src="../../assets/images/category.jpg" height="50" width="50"/>
-              <p>休闲食品</p>
             </router-link>
           </a>
         </li>
@@ -157,9 +27,8 @@
         props:["topdata"],
         data(){
             return{
-              scrollX: 0,
-              scrollY: 0,
-              listHeight: [],
+                num:0,
+                srcurl:"https://jhoss02.oss-cn-beijing.aliyuncs.com/",
             }
         },
         created:function () {
@@ -173,17 +42,9 @@
               click: true
             });
           },
-          /*cate:function(childCatalogs){
-            let doms;
-              for(let i = 0,legth = childCatalogs.length;i<legth;i++){
-                  doms = '<li>+<a>+<router-link to="/categorylist"> <img src="../../assets/images/category.jpg" height="50" width="50"/>
-                            <p>$(childCatalogs[i].catalogName)</p>
-                          </router-link>
-                        </a>
-                      </li>'
-              }
-              console.log(doms)
-          }*/
+          cate:function(index) {
+            this.num = index;
+          }
         }
     }
 </script>

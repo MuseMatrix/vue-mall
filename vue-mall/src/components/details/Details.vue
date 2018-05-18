@@ -25,7 +25,7 @@
       DetailsTitleView,
       DetailsImageView,
       DetailsBottomView
-    }
+    },
   }
 </script>
 
