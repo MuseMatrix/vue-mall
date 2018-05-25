@@ -8,17 +8,26 @@
       </div>
       <div class="content">
         <div class="address">
-          <p class="concat">
-            <span>{{username}}</span>
-            <span>{{mobilePhone}}</span>
-          </p>
-          <i class="iconfont icon-jiantouyou fr"></i>
-          <p class="text" v-if="address != ''">
-            北京市海淀区上地大厦{{address}}
-          </p>
-          <p class="text" v-else>
-            请添加地址信息
-          </p>
+          <a href="http://192.168.1.141:8091/wx/LL_addNewAddress.html" v-if="detailAddress != ''">
+            <p class="concat">
+              <span>{{username}}</span>
+              <span>{{mobilePhone}}</span>
+            </p>
+            <i class="iconfont icon-jiantouyou fr"></i>
+            <p class="text">
+              北京市海淀区上地大厦{{detailAddress}}
+            </p>
+          </a>
+          <a href="http://192.168.1.141:8091/wx/LL_addNewAddress.html" v-else>
+            <p class="concat">
+              <span>{{username}}</span>
+              <span>{{mobilePhone}}</span>
+            </p>
+            <i class="iconfont icon-jiantouyou fr"></i>
+            <p class="text">
+              请添加收货地址
+            </p>
+          </a>
         </div>
         <div><img class="botcss" src="../../assets/images/bottom.png" height="1" width="400"/></div>
         <div class="shop">
@@ -92,7 +101,24 @@
         </p>
         <button class="fr" type="button" @click="showModal();byValue();">立即购买</button>
       </div>
-      <div class="payment" v-show="isModelVisible">
+    	<div class="qrjk" v-show="isModelVisible">
+        <div class="modal-backdrop">
+          <div class="modal">
+            <ul class="q_ul">
+                <li class="li1"><i class="iconfont icon-guanbi fl" @click="sureclose"></i>确认支付</li>
+                <li class="li2">
+                    <h4 class="money" ref="nowTotal"></h4>
+                    <div><span class="sp1">订单信息</span><span class="sp2">付款</span></div>
+                  </li>
+                 <li class="li3">
+                    <div><span class="sp1">付款方式</span><span class="sp2" id="yhang" @click="selpay" ref="way">请选择支付</span></div>
+                  </li>
+                <li class="li4" @click="payment">确认</li>
+              </ul>
+          </div>
+        </div>
+    	</div>
+      <div class="payment" v-show="ispayway">
         <div class="modal-backdrop">
           <div class="modal">
             <div class="pay-t">
@@ -100,58 +126,96 @@
               <h4>选择支付方式</h4>
             </div>
             <ul>
-              <li class="clearfix">
-                <p class="fl">
-                  <img>
-                  <span>汇通卡支付</span>
-                </p>
-                <span class="cked fr"></span>
+              <li class="clearfix" v-for="(item,index) in TypeChannels" @click="selectpay(index)">
+                <div class="clearfix scan-d">
+                  <p class="fl">
+                    <img>
+                    <span ref="pasname">{{item.name}}</span>
+                  </p>
+                  <i class="iconfont icon-jiantouyou fr" v-if="item.name != '扫码支付'"></i>
+                </div>
+               <ul class="ScanPay clearfix" v-if="item.name == '扫码支付'">
+                  <li> </li>
+                  <li class="clearfix scan-d" @click="selectpay(0)">
+                    <p class="fl">
+                      <span ref="pasname">微信扫码支付</span>
+                    </p>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                  </li>
+                  <li class="clearfix scan-d" @click="selectpay(1)">
+                    <p class="fl">
+                      <span ref="pasname">支付宝扫码支付</span>
+                    </p>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                  </li>
+                  <li class="clearfix scan-d" @click="selectpay(2)">
+                    <p class="fl">
+                      <span ref="pasname">一码支付</span>
+                    </p>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                  </li>
+                </ul>
               </li>
-              <li class="clearfix">
-                <p class="fl">
-                  <img>
-                  <span>会员卡支付</span>
-                </p>
-                <span class="uck fr"></span>
-              </li>
-              <li class="clearfix">
+              <!--<li class="clearfix">
                 <p class="fl">
                   <img>
                   <span>余额支付</span>
                 </p>
-                <span class="uck fr"></span>
+                <span class="cked fr"></span>
+              </li>
+              <li class="clearfix">
+                <div class="clearfix scan-d">
+                  <p class="fl">
+                    <img>
+                    <span>扫码支付</span>
+                  </p>
+                  <span class="uck fr"></span>
+                </div>
+                <ul class="ScanPay clearfix">
+                  <li class="clearfix">
+                    <p class="fl">
+                      <span>微信扫码支付</span>
+                    </p>
+                    <span class="uck fr"></span>
+                  </li>
+                  <li class="clearfix">
+                    <p class="fl">
+                      <span>支付宝扫码支付</span>
+                    </p>
+                    <span class="uck fr"></span>
+                  </li>
+                  <li class="clearfix">
+                    <p class="fl">
+                      <span>一码支付</span>
+                    </p>
+                    <span class="uck fr"></span>
+                  </li>
+                </ul>
               </li>
               <li class="clearfix">
                 <p class="fl">
                   <img>
-                  <span>微信</span>
+                  <span>微信支付</span>
                 </p>
                 <span class="uck fr"></span>
               </li>
               <li class="clearfix">
                 <p class="fl">
                   <img>
-                  <span>支付宝</span>
+                  <span>快捷支付</span>
                 </p>
                 <span class="uck fr"></span>
-              </li>
-              <li class="clearfix">
-                <p class="fl">
-                  <img>
-                  <span>招商银行</span>
-                </p>
-                <span class="uck fr"></span>
-              </li>
+              </li>-->
             </ul>
-              <div class="now-d">
-                <router-link to="/paysuccess">
+ <!--             <div class="now-d">
+                <router-link to="">
                   <button class="now-p" @click="payment">立即支付(<span ref="nowTotal"></span>)</button>
                 </router-link>
-              </div>
+              </div>-->
           </div>
         </div>
       </div>
-      <div class="sure-pay" v-show="isModelOpen">
+     <!-- <div class="sure-pay" v-show="isModelOpen">
         <div class="modal-backdrop">
           <div class="modal model-center">
             <div class="sure-p">
@@ -159,11 +223,11 @@
               <p>您的订单将留存在待支付中48小时请尽快完成支付</p>
             </div>
             <div class="btn">
-              <button @click="reModal();closeModal();">离开</button><router-link to="/paysuccess"><button class="con">继续支付</button></router-link>
+              <button @click="reModal();closeModal();">离开</button><router-link to=""><button class="con">继续支付</button></router-link>
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
   </div>
 </template>
 
@@ -178,17 +242,30 @@
     name: "order",
     data(){
       return{
+        num:0,
+        TypeChannels:[
+          {name:"余额支付",info:[{type:0,channel:4}]},
+          {name:"扫码支付",info:[{type:3,channel:0},{type:3,channel:1},{type:1,channel:6}]},
+          {name:"微信支付",info:[{type:1,channel:0}]},
+          {name:"支付宝支付",info:[{type:1,channel:1}]},
+          {name:"快捷支付",info:[{type:1,channel:3}]},
+          {name:"汇通卡支付",info:[{type:11,channel:5}]},
+        ],
         srcurl:"https://jhoss02.oss-cn-beijing.aliyuncs.com/",
         respayurl:"api/api/malls/pay/queryMallsProductPayInfo",
         resorderurl:"api/api/malls/order/getOrdersOrderNo",
         restopay:"api/api/malls/pay/makeMallsOrder",
+        ispayway:false,
         isModelVisible:false,
         isModelOpen:false,
         isA:false,
+        isP:false,
+        payType:"",
+        payChannel:"",
         ordersOrderNoList:"",
         count:0,
         parms:{
-          userId:"3",
+          userId:"JM081802280001",
           requestId:new Date().getTime(),
           merchantId:"",
           productId:"",
@@ -196,7 +273,7 @@
         addressId:"",
         username:"",
         mobilePhone:"",
-        address:"",
+        detailAddress:"",
         merchantName:"",
         productName:"",
         productPicIndex:"",
@@ -232,7 +309,7 @@
         ],
         /*组装数据*/
         paydata={
-          userId: 3
+          userId: "JM081802280001"
           ,
           requestId: 0,
           addressId:this.addressId,
@@ -254,14 +331,35 @@
       closeModal(){
         this.isModelVisible = false;
       },
+      sureclose(){
+        this.isModelVisible = false;
+      },
+      selpay(){
+        this.isModelVisible = false;
+        this.ispayway = true;
+      },
+      selectpay(idx){
+
+        this.$refs.way.innerText = this.$refs.pasname[idx].innerText;
+        this.ispayway =false;
+        this.isModelVisible = true;
+        this.payType = this.TypeChannels[idx].info[0].type;
+        this.payChannel = this.TypeChannels[idx].info[0].channel;
+      },
       openModal() {
         this.isModelOpen = true;
+        this.ispayway = false;
       },
       reModal(){
         this.isModelOpen = false;
       },
       back(){
         return this.$router.go(-1);
+      },
+      cate:function(index) {
+        this.num = index;
+        this.payType = index;
+        this.payChannel = index;
       },
       add(){
         this.count++;
@@ -279,25 +377,35 @@
         this.isA = !this.isA;
       },
       byValue(){
-        this.$refs.nowTotal.innerText = this.$refs.totalamount.innerText;
+        this.$refs.nowTotal.innerText = "￥"+this.$refs.totalamount.innerText;
+      },
+      fastpay:function(paydata){
+        location.href = paydata.PostUrl + '?' + paydata.PostData;
       },
       payment(){
         let todata = {
-          userId:"3",
+          userId:"JM071804200002",
           requestId:new Date().getTime(),
           ordersOrderNoList:JSON.stringify(this.ordersOrderNoList),
           realPayAmount:parseFloat(this.$refs.totalamount.innerText),
           useIntegralFlag:"0",
-          payType:"0",
-          payChannel:"0",
-          orgId:"",
-          param:"",
+          payType:this.payType,
+          payChannel:this.payChannel,
+          orgId:"0",
+          param:JSON.stringify({
+            PageUrl: encodeURIComponent(location.href),
+            ReturnUrl: encodeURIComponent(location.href + (location.href.indexOf('?') > -1 ? '&' : '?') + 'isReturn=1'),
+            ClientIP: returnCitySN.cip,
+          }),
           productId:this.parms.productId
         }
+        console.log(todata);
         this.$axios.post(this.restopay,Qs.stringify(todata),heads).then((res) =>{
-          Console.log(res);
+          if(res.data.retcode == '000000'){
+            this.fastpay(res.data.paydata);
+          }
         }).catch((err) =>{
-
+          console.log(error);
         })
       }
     },
@@ -307,18 +415,15 @@
       this.parms.merchantId = this.$route.query.merchantId;
       this.parms.productId = this.$route.query.productId;
       this.merchantName = this.$route.query.merchantName;
-      console.log(this.$refs.price)
-      console.log(this.count)
       /*请求参数*/
-      console.log(this.parms)
       this.$axios.post(this.respayurl,Qs.stringify(this.parms),heads).then((res) =>{
 
         /*响应参数*/
-          console.log(res);
+          console.log("+++++++"+JSON.stringify(res));
           this.addressId = res.data.addressId;
           this.username = res.data.username;
           this.mobilePhone= res.data.mobilePhone;
-          this.address= res.data.address;
+          this.detailAddress= res.data.detailAddress;
           this.merchantName = res.data.merchantName;
           this.productName = res.data.productName;
           this.productPicIndex = res.data.productPicIndex;

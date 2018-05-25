@@ -7,7 +7,7 @@
               <p>商圈</p>
             </a>
             <a>
-              <router-link to="/">
+              <router-link to="/home">
                 <i class="iconfont icon-shangcheng"></i>
                 <p>商城</p>
               </router-link>

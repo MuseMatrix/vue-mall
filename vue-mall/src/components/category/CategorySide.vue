@@ -6,16 +6,41 @@
       </ul>
     </div>
     <div class="category-content clearfix">
-      <ul class="img-l fr" v-for="(item,index) in topdata" v-if="index == num">
-        <li v-for="(ite,index1) in item.childCatalogList">
-          <a>
-            <router-link :to="{name:'categorylist',query:{id:item.catalogId}}">
-              <img :src="srcurl+ite.catalogPicIndex" height="50" width="50"/>
-              <p>{{ite.catalogName}}</p>
-            </router-link>
-          </a>
-        </li>
-      </ul>
+
+        <ul class="img-l fr"  v-for="(item,index) in topdata" v-if="index == num">
+          <li v-for="(ite,index1) in item.childCatalogList">
+            <a>
+              <router-link :to="{name:'categorylist',query:{id:ite.catalogId}}">
+                <img :src="srcurl+ite.catalogPicIndex" height="50" width="50"/>
+                <p>{{ite.catalogName}}</p>
+              </router-link>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../../assets/images/category.jpg" height="50" width="50"/>
+              <p>苹果</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../../assets/images/category.jpg" height="50" width="50"/>
+              <p>苹果</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../../assets/images/category.jpg" height="50" width="50"/>
+              <p>苹果</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../../assets/images/category.jpg" height="50" width="50"/>
+              <p>苹果</p>
+            </a>
+          </li>
+        </ul>
     </div>
   </div>
 </template>

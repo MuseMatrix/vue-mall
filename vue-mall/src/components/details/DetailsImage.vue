@@ -1,12 +1,13 @@
 <template>
     <div class="details-image w9-m">
         <ul>
-          <li v-for="(item,index) in productIntroduceList"><img :src="srcurl+item.picIndex"/></li>
+          <li v-for="(item,index) in productInfo.productIntroduceList"><img :src="srcurl+item.picIndex"/></li>
         </ul>
     </div>
 </template>
 
 <script>
+  import { mapState } from 'vuex';
     export default {
         name: "details-image",
         data(){
@@ -15,9 +16,12 @@
             productIntroduceList:""
           }
         },
-        mounted(){
-            this.productIntroduceList = JSON.parse(localStorage.getItem("productIntroduceList"));
-        }
+      computed:{
+        ...mapState({
+            productInfo:'productInfo',
+          }
+        ),
+      },
     }
 </script>
 

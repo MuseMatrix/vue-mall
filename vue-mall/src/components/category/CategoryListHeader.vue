@@ -3,7 +3,7 @@
         <div class="cate w9-2">
           <a class=""><i class="iconfont icon-liebiao"></i></a>
           <div class="text-msg">
-            <input class="search" type="text" placeholder="" value="火锅">
+            <input class="search" type="text" placeholder="" value="请输入店铺或美食" @click="clear">
           </div>
           <router-link to="/">
             <a class=""><span>取消</span></a>
@@ -14,7 +14,12 @@
 
 <script>
     export default {
-        name: "category-list-header"
+        name: "category-list-header",
+        methods:{
+          clear(){
+            return this.message = "";
+          },
+        }
     }
 </script>
 

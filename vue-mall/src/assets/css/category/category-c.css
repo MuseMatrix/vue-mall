@@ -4,12 +4,15 @@
   right: 0;
   display: inline-block;
   width: 7.5rem;
+  height: 100%;
+  overflow: auto;
 }
 .img-l{
   display: flex;
   width: 7.5rem;
 /*  justify-content: space-around;*/
   flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
 .img-l li{
   width: 2.5rem;

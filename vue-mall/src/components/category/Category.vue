@@ -20,8 +20,6 @@
   /*import CategoryContentView from './CategoryContent.vue';*/
   import CategoryFootView from '@/components/home/HomeBottom';
 
-  const url = "http://192.168.1.99:8080/malls-provider-http";
-
   export default {
     name: "category",
     data(){
@@ -37,17 +35,16 @@
     components:{
       CategoryHeaderView,
       CategorySideView,
-/*      CategoryContentView,*/
+/*    CategoryContentView,*/
       CategoryFootView
     },
     mounted(){
-      console.log(this.parms);
       this.$axios.post(this.url,Qs.stringify(this.parms),{
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
           }
         }).then((res) =>{
-        console.log(res);
+        console.log("【商品分类请求response】："+JSON.stringify(res));
         this.topdata = res.data.datalist;
       }).catch((error) =>{
         console.log(res);

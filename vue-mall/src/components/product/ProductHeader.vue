@@ -5,7 +5,7 @@
             <a class="share fr"><i class="iconfont icon-fenxiang"></i></a>
             <div class="cate">
              <!-- <a v-for="(item,index) in menuls"><router-link :to="item.path">{{item.text}}</router-link></a>-->
-              <a><router-link :to="{name:'product',query:{id:productId}}">商品</router-link></a>
+              <a><router-link :to="{name:'product',query:{id:productInfo.productId}}">商品</router-link></a>
               <a><router-link to="/details">详情</router-link></a>
             </div>
         </div>
@@ -13,9 +13,9 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
     export default {
         name: "product-details",
-        props:["productIntroduceList","specificationParamList","afterSaleService"],
         data(){
             return{
               menuls:[
@@ -31,9 +31,12 @@
             return this.$router.go(-1);
           },
         },
-        mounted(){
-          this.productId = localStorage.getItem("productId");
-        }
+      computed:{
+        ...mapState({
+            productInfo:'productInfo',
+          }
+        ),
+      },
     }
 </script>
 

@@ -4,13 +4,12 @@ import axios from 'axios';
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
-  strict:true,
+  /*初始化存放数据*/
   state:{
-      //初始化存放数据
-      strict: true,
       productInfo:{
         bannerPicIndexList:"",
         picIndex:"",
+        productId:"",
         productName:"",
         productMark:"",
         productPrice:"",
@@ -25,32 +24,43 @@ export const store = new Vuex.Store({
         productIntroduceList:"",
         specificationParamList:"",
         afterSaleService:""
-      }
+      },
+      productlist:""
   },
-
+  /*获取数据*/
   getters:{
     productInfo: state => state.productInfo,
+    productlist: state => state.state
   },
   /*同步进行方法，通知state修改*/
   mutations:{
-    findProductInfo(state, productInfo) {
+    findProductInfo:(state, productInfo) => {
       state.productInfo = productInfo.productInfo;
     },
+    findProductList:(state,productlist) => {
+      state.productlist = productlist.productlist;
+    }
   },
  /* action异步请求*/
   actions:{
-    findProductInfo({commit}, productInfo) {
+   findProductInfo:({commit}, productInfo) => {
       commit('findProductInfo', {
         productInfo: productInfo,
       })
     },
-    findProductInfo(context,resData){
-        console.log("进来了");
-        console.log(resData);
+    findProductList:({commit},productlist) =>{
+      commit('findProductList', {
+        productlist: productlist,
+      })
+    },
+    /*查询商品详情*/
+    findProductInfo:(context,resData) => {
         axios.post(resData.resurl,resData.parms,resData.heads).then((res) =>{
-        console.log(res);
+        console.log("【商品详情respon.02se】："+JSON.stringify(res));
+
         context.state.productInfo.bannerPicIndexList = res.data.bannerPicIndexList;
         context.state.productInfo.picIndex = res.data.picIndex;
+        context.state.productInfo.productId = res.data.productId;
         context.state.productInfo.productName = res.data.productName;
         context.state.productInfo.productMark = res.data.productMark;
         context.state.productInfo.productPrice = res.data.productPrice;
@@ -65,8 +75,19 @@ export const store = new Vuex.Store({
         context.state.productInfo.productIntroduceList = res.data.productIntroduceList;
         context.state.productInfo.specificationParamList = res.data.specificationParamList;
         context.state.productInfo.afterSaleService = res.data.afterSaleService;
+
       }).catch((error) =>{
-        console.log(res);
+        console.log(error);
+      })
+    },
+    /*查询商品列表*/
+    findProductList:(context,resData) =>{
+        axios.post(resData.resurl,resData.parms,resData.heads).then((res) =>{
+        console.log("【商品列表response】："+JSON.stringify(res));
+
+        context.state.productlist = res.data.datalist;
+      }).catch((error) => {
+        console.log(error);
       })
     }
   }

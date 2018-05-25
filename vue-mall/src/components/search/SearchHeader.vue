@@ -2,7 +2,7 @@
   <div class="search-header">
     <div class="sear w10">
       <div class="text-msg">
-        <input class="search" type="text" placeholder="" value="message" v-model="message" @click="clear" ref="type1">
+        <input class="search" type="text" placeholder="" value="message" v-model="message" @click="clear" @input="change" ref="type1">
       </div>
       <router-link to="/">
         <a class=""><span>取消</span></a>
@@ -38,18 +38,7 @@
         </ul>
       </div>
       <ul class="search-list" v-show="sw">
-        <router-link :to="{name:'categorylist',params:{id:1}}"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
-        <router-link to="/categorylist"><li>火锅底料</li></router-link>
+        <router-link :to="{name:'categorylist',query:{name:message}}"><li ref="sext"></li></router-link>
       </ul>
     </div>
   </div>
@@ -70,20 +59,19 @@
             return this.message = "";
           },
           change(){
-            this.show = false;
-            this.sw = true;
+              this.$refs.sext.innerText = this.message;
           }
         },
-      watch:{
-          message:{
-            handler:function(val,old){
-              if(val != old){
-                this.show = false;
-                this.sw = true;
+        watch:{
+            message:{
+              handler:function(val,old){
+                if(val != old){
+                  this.show = false;
+                  this.sw = true;
+                }
               }
             }
-          }
-      }
+        }
     }
 </script>
 

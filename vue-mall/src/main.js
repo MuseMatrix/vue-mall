@@ -6,12 +6,14 @@ import router from './router';
 import VueRouter from 'vue-router';
 import axios from 'axios';
 import {store} from './store/store';
+import VueScroller from 'vue-scroller';
 import Vuex from 'vuex';
 
-Vue.use(Vuex)
-Vue.use(VueRouter)
-Vue.prototype.$axios = axios
-Vue.config.productionTip = false
+Vue.use(Vuex);
+Vue.use(VueRouter);
+Vue.use(VueScroller);
+Vue.prototype.$axios = axios;
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({

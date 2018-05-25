@@ -2,7 +2,7 @@
   <div id="home-h">
       <div class="head-top">
         <a class="category fl" href="">
-          <router-link to="/category">分类</router-link>
+          <router-link to="/">分类</router-link>
         </a>
         <router-link to="/surepay">
           <a class="msg fr" href="">

@@ -1,6 +1,6 @@
 .pay-t{
   position: relative;
-  line-height: 1.25rem;
+  line-height: 1rem;
   text-align: center;
   border-bottom: .025rem solid #eee;
 }
@@ -8,7 +8,7 @@
   position: absolute;
   left:0;
   padding: 0 .375rem;
-  font-size: .95rem;
+  font-size: .8rem;
   color:#999;
   
 }
@@ -20,19 +20,24 @@
 }
 .pay-t + ul li{
   position: relative;
-  line-height: 1.25rem;
+  line-height: 1rem;
   border-bottom: 0.025rem solid #eee;
-  padding: 0 .375rem;
   font-size: .4rem;
   color: #333;
 }
-ul li span{
+.pay-t + ul li p{
+  padding-left: .375rem;
+}
+.pay-t + ul li span{
+  padding-right: .75rem;
   margin-top: 0.373625rem;
+}
+.pay-t + ul li .ScanPay li span{
+  margin-top: 0.173625rem;
 }
 .now-d{
   text-align: center;
-  padding-top: 1.625rem;
-  padding-bottom: .475rem;
+  padding: .5rem;
 }
 .now-p{
   width: 7.5rem;

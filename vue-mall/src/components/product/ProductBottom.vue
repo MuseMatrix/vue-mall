@@ -23,10 +23,10 @@
       <div class="modal-backdrop">
         <div class="modal">
           <div class="product-o">
-              <img v-for="(item,index) in bannerPicIndexList" v-if="index == 0" :src="srcurl+item.picIndex" height="110" width="110"/>
+              <img v-for="(item,index) in productInfo.bannerPicIndexList" v-if="index == 0" :src="srcurl+item.picIndex" height="110" width="110"/>
             <div class="product-t">
-              <span>￥{{productPrice}}</span>
-              <p>商品编号:{{productId}}</p>
+              <span>￥{{productInfo.productPrice}}</span>
+              <p>商品编号:{{productInfo.productId}}</p>
             </div>
             <i class="iconfont icon-guanbi" @click="closeModal"></i>
           </div>
@@ -45,8 +45,8 @@
           </div>
           <router-link :to="{name:'order',query:{
             counter:count,
-            productId:productId,
-            merchantId:merchantId,
+            productId:productInfo.productId,
+            merchantId:productInfo.merchantId,
             }}"><button class="sure">确定</button></router-link>
         </div>
       </div>
@@ -55,6 +55,7 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
     export default {
       name: "product-bottom",
       props:[
@@ -62,13 +63,12 @@
           "productMark",
           "productPrice",
           "productId",
-          "bannerPicIndexList",
           "merchantId",
         ],
       data(){
           return{
             isModelVisible:false,
-            count:0,
+            count:1,
             srcurl:"https://jhoss02.oss-cn-beijing.aliyuncs.com/"
           }
       },
@@ -83,12 +83,18 @@
             this.count++;
           },
           sub(){
-            if(this.count <1 ){
+            if(this.count <2 ){
               return;
             }
             this.count--;
           }
-        }
+        },
+      computed:{
+        ...mapState({
+            productInfo:'productInfo',
+          }
+        ),
+      },
       }
 </script>
 
